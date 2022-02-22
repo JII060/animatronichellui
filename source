@@ -1,0 +1,224 @@
+-- Gui to Lua
+-- Version: 3.2
+
+	
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local breadb = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local jumpscarespam = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local animkill = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local william = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local springlock = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local unlock = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local jumpspam2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.0478465334, 0, 0.583093703, 0)
+main.Size = UDim2.new(0, 222, 0, 171)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = main
+
+ScrollingFrame.Parent = main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(0.0540540516, 0, 0.0818713382, 0)
+ScrollingFrame.Size = UDim2.new(0, 197, 0, 143)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 199)
+function findPlr(name)
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		if string.find(v.Name, name) then
+			return v
+		end
+	end
+end
+breadb.Name = "breadb"
+breadb.Parent = ScrollingFrame
+breadb.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+breadb.Position = UDim2.new(0.121827409, 0, 0.0134952925, 0)
+breadb.Size = UDim2.new(0, 150, 0, 35)
+breadb.Font = Enum.Font.Cartoon
+breadb.Text = "Breadbear Army"
+breadb.TextColor3 = Color3.fromRGB(255, 255, 255)
+breadb.TextScaled = true
+breadb.TextSize = 14.000
+breadb.TextWrapped = true
+breadb.MouseButton1Down:Connect(function()
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+		game:GetService("ReplicatedStorage").Characters.Breadbear:FireServer(Player,Player.Humanoid)
+
+	end
+end)
+
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = breadb
+
+jumpscarespam.Name = "jumpscarespam"
+jumpscarespam.Parent = ScrollingFrame
+jumpscarespam.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+jumpscarespam.Position = UDim2.new(0.121827409, 0, 0.156770155, 0)
+jumpscarespam.Size = UDim2.new(0, 150, 0, 35)
+jumpscarespam.Font = Enum.Font.Cartoon
+jumpscarespam.Text = "Spamscare"
+jumpscarespam.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpscarespam.TextScaled = true
+jumpscarespam.TextSize = 14.000
+jumpscarespam.TextWrapped = true
+jumpscarespam.MouseButton1Down:Connect(function()
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
+		[2] = game:GetService("Players").LocalPlayer.Character
+	}
+	while wait(0.5) do
+		game:GetService("ReplicatedStorage").Jumpscares.baby:FireServer(unpack(args))
+	end
+end)
+
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = jumpscarespam
+
+animkill.Name = "break"
+animkill.Parent = ScrollingFrame
+animkill.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+animkill.Position = UDim2.new(0.121827409, 0, 0.291273057, 0)
+animkill.Size = UDim2.new(0, 150, 0, 35)
+animkill.Font = Enum.Font.Cartoon
+animkill.Text = "Break Animations"
+animkill.TextColor3 = Color3.fromRGB(255, 255, 255)
+animkill.TextScaled = true
+animkill.TextSize = 14.000
+animkill.TextWrapped = true
+animkill.MouseButton1Down:Connect(function()
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+		game:GetService("ReplicatedStorage").Characters.Human:FireServer(Player,Player.Humanoid)
+
+	end
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = animkill
+
+william.Name = "william"
+william.Parent = ScrollingFrame
+william.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+william.Position = UDim2.new(0.121827409, 0, 0.449167788, 0)
+william.Size = UDim2.new(0, 150, 0, 35)
+william.Font = Enum.Font.Cartoon
+william.Text = "THE MEN BEHIND THE SLAUGHTER"
+william.TextColor3 = Color3.fromRGB(170, 0, 255)
+william.TextScaled = true
+william.TextSize = 14.000
+william.TextWrapped = true
+william.MouseButton1Down:Connect(function()
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+		game:GetService("ReplicatedStorage").Characters.PurpleGuy:FireServer(Player,Player.Humanoid)
+
+	end
+end)
+
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = william
+
+springlock.Name = "springlock"
+springlock.Parent = ScrollingFrame
+springlock.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+springlock.Position = UDim2.new(0.121827409, 0, 0.595366597, 0)
+springlock.Size = UDim2.new(0, 150, 0, 35)
+springlock.Font = Enum.Font.Cartoon
+springlock.Text = "Springlock All"
+springlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+springlock.TextScaled = true
+springlock.TextSize = 14.000
+springlock.TextWrapped = true
+springlock.MouseButton1Down:Connect(function()
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+		game:GetService("ReplicatedStorage").Characters.SpringTrap:FireServer(Player,Player.Humanoid)
+
+	end
+end)
+
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = springlock
+
+unlock.Name = "unlock"
+unlock.Parent = ScrollingFrame
+unlock.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+unlock.Position = UDim2.new(0.121827409, 0, 0.750337362, 0)
+unlock.Size = UDim2.new(0, 150, 0, 35)
+unlock.Font = Enum.Font.Cartoon
+unlock.Text = "Unlock All! (Events, Badges, Gamepasses.)"
+unlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+unlock.TextScaled = true
+unlock.TextSize = 14.000
+unlock.TextWrapped = true
+unlock.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.UserId = 23467579
+end)
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = unlock
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(255, 255, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
+UIGradient.Parent = unlock
+
+jumpspam2.Name = "jumpspam2"
+jumpspam2.Parent = ScrollingFrame
+jumpspam2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+jumpspam2.Position = UDim2.new(0.121827409, 0, 0.899460196, 0)
+jumpspam2.Size = UDim2.new(0, 150, 0, 35)
+jumpspam2.Font = Enum.Font.Cartoon
+jumpspam2.Text = "Scarespam 2"
+jumpspam2.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpspam2.TextScaled = true
+jumpspam2.TextSize = 14.000
+jumpspam2.TextWrapped = true
+jumpspam2.MouseButton1Down:Connect(function(jumpspam2)
+	-- glamrock scare
+
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
+		[2] = game:GetService("Players").LocalPlayer.Character
+	}
+while wait(0.5) do
+		game:GetService("ReplicatedStorage").Jumpscares.Glamrock:FireServer(unpack(args))
+			end
+			end)
+
+
+
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = jumpspam2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = main
