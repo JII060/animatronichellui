@@ -38,6 +38,7 @@ local UIGradient_6 = Instance.new("UIGradient")
 local UICorner_11 = Instance.new("UICorner")
 local onoff = Instance.new("StringValue")
 local opensound = Instance.new("Sound")
+local close = Instance.new("TextButton")
 
 --Properties:
 
@@ -261,6 +262,22 @@ danger.TextScaled = true
 danger.TextSize = 14.000
 danger.TextWrapped = true
 
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.Size = UDim2.new(0, 36, 0, 50)
+close.Font = Enum.Font.GothamBlack
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextStrokeTransparency = 0.000
+close.TextWrapped = true
+close.MouseButton1Down:Connect(function(close)
+main.Visible = false
+end
+
 
 UICorner_10.CornerRadius = UDim.new(0, 10)
 UICorner_10.Parent = crash_2
@@ -303,9 +320,6 @@ UIGradient_5.Rotation = -90
 UIGradient_5.Parent = TextLabel
 
 
-onoff.Name = "onoff"
-onoff.Parent = open
-onoff.Value = "off"
 
 opensound.Name = "opensound"
 opensound.SoundId = 2513067004
@@ -325,16 +339,12 @@ open.TextSize = 14.000
 open.TextWrapped = true
 
 open.MouseButton1Down:Connect(function(openorclose)
-	if onoff == "off" then
+	
 		main.Visible = true
 		opensound:play()
-		onoff = "on"
-	end
-	if onoff == "on" then
-		main.Visible = false
-		opensound:play()
-		onoff = "off"
-	end
+		
+	
+	
 end)
 
 
