@@ -34,11 +34,6 @@ local UIGradient_4 = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
 local UIGradient_5 = Instance.new("UIGradient")
 
-local UIGradient_6 = Instance.new("UIGradient")
-local UICorner_11 = Instance.new("UICorner")
-
-
-
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -47,9 +42,8 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-main.Position = UDim2.new(0.659864008, 0, 0.221615165, 0)
+main.Position = UDim2.new(0.678911626, 0, 0.239197582, 0)
 main.Size = UDim2.new(0, 227, 0, 339)
-main.Visible = true
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = main
@@ -105,6 +99,7 @@ jumpscarespam.MouseButton1Down:Connect(function()
 end)
 
 
+
 UICorner_3.CornerRadius = UDim.new(0, 10)
 UICorner_3.Parent = jumpscarespam
 
@@ -127,6 +122,7 @@ animkill.MouseButton1Down:Connect(function()
 	end
 end)
 
+
 UICorner_4.CornerRadius = UDim.new(0, 10)
 UICorner_4.Parent = animkill
 
@@ -148,6 +144,7 @@ william.MouseButton1Down:Connect(function()
 
 	end
 end)
+
 
 UICorner_5.CornerRadius = UDim.new(0, 10)
 UICorner_5.Parent = william
@@ -218,6 +215,7 @@ jumpspam2.MouseButton1Down:Connect(function(jumpspam2)
 	end
 end)
 
+
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = jumpspam2
 
@@ -262,6 +260,8 @@ danger.TextSize = 14.000
 danger.TextWrapped = true
 
 
+
+
 UICorner_10.CornerRadius = UDim.new(0, 10)
 UICorner_10.Parent = crash_2
 
@@ -301,15 +301,3 @@ TextLabel.TextWrapped = true
 UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
 UIGradient_5.Rotation = -90
 UIGradient_5.Parent = TextLabel
-
-
-
-
-
-
-
-
-
-
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
-UIGradient_6.Rotation = -90
