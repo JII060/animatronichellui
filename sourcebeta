@@ -33,12 +33,11 @@ local more = Instance.new("TextLabel")
 local UIGradient_4 = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
 local UIGradient_5 = Instance.new("UIGradient")
-local open = Instance.new("TextButton")
+
 local UIGradient_6 = Instance.new("UIGradient")
 local UICorner_11 = Instance.new("UICorner")
-local onoff = Instance.new("StringValue")
-local opensound = Instance.new("Sound")
-local close = Instance.new("TextButton")
+
+
 
 --Properties:
 
@@ -50,7 +49,7 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 main.Position = UDim2.new(0.659864008, 0, 0.221615165, 0)
 main.Size = UDim2.new(0, 227, 0, 339)
-main.Visible = false
+main.Visible = true
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = main
@@ -262,22 +261,6 @@ danger.TextScaled = true
 danger.TextSize = 14.000
 danger.TextWrapped = true
 
-close.Name = "close"
-close.Parent = main
-close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-close.BackgroundTransparency = 1.000
-close.Size = UDim2.new(0, 36, 0, 50)
-close.Font = Enum.Font.GothamBlack
-close.Text = "X"
-close.TextColor3 = Color3.fromRGB(255, 0, 0)
-close.TextScaled = true
-close.TextSize = 14.000
-close.TextStrokeTransparency = 0.000
-close.TextWrapped = true
-close.MouseButton1Down:Connect(function(close)
-main.Visible = false
-end
-
 
 UICorner_10.CornerRadius = UDim.new(0, 10)
 UICorner_10.Parent = crash_2
@@ -321,31 +304,9 @@ UIGradient_5.Parent = TextLabel
 
 
 
-opensound.Name = "opensound"
-opensound.SoundId = 2513067004
-opensound.Volume = 1
-opensound.PlaybackSpeed = 1
-open.Name = "open"
-open.Parent = ScreenGui
-open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-open.BorderSizePixel = 4
-open.Position = UDim2.new(0.376870751, 0, 0.0395604409, 0)
-open.Size = UDim2.new(0, 181, 0, 37)
-open.Font = Enum.Font.GothamBlack
-open.Text = "Open"
-open.TextColor3 = Color3.fromRGB(0, 0, 0)
-open.TextScaled = true
-open.TextSize = 14.000
-open.TextWrapped = true
 
-open.MouseButton1Down:Connect(function(openorclose)
-	
-		main.Visible = true
-		opensound:play()
-		
-	
-	
-end)
+
+
 
 
 
