@@ -302,6 +302,15 @@ UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_5.Rotation = -90
 UIGradient_5.Parent = TextLabel
 
+
+onoff.Name = "onoff"
+onoff.Parent = open
+onoff.Value = "off"
+
+opensound.Name = "opensound"
+opensound.SoundId = 2513067004
+opensound.Volume = 1
+opensound.PlaybackSpeed = 1
 open.Name = "open"
 open.Parent = ScreenGui
 open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -314,6 +323,7 @@ open.TextColor3 = Color3.fromRGB(0, 0, 0)
 open.TextScaled = true
 open.TextSize = 14.000
 open.TextWrapped = true
+
 open.MouseButton1Down:Connect(function(openorclose)
 	if onoff == "off" then
 		main.Visible = true
@@ -327,14 +337,6 @@ open.MouseButton1Down:Connect(function(openorclose)
 	end
 end)
 
-onoff.Name = "onoff"
-onoff.Parent = open
-onoff.Value = "off"
-
-opensound.Name = "opensound"
-opensound.SoundId = 2513067004
-opensound.Volume = 1
-opensound.PlaybackSpeed = 1
 
 
 
