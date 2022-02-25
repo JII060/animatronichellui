@@ -1,4 +1,5 @@
--- GUI to Lua is a Life Saver.
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -232,7 +233,8 @@ crash.MouseButton1Down:Connect(function(crash)
 		game:GetService("ReplicatedStorage").Characters.Breadbear:FireServer(Player,Player.Humanoid)
 
 	end
-end
+	end
+	end)
 
 
 
