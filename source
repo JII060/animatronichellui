@@ -3,6 +3,7 @@
 
 -- Instances:
 
+
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -297,4 +298,34 @@ TextLabel.TextWrapped = true
 UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
 UIGradient_5.Rotation = -90
 UIGradient_5.Parent = TextLabel
+
+
+
+
+
+
+
+
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "v2.0";
+ Text = "it will be good i swear";
+ Icon = "3719854996";
+ Duration = 5;
+ Button1 = "ok";
+ Button2 = "egerg";
+ Callback = NotificationBindable;
+})
+
+
 
