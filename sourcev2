@@ -49,9 +49,7 @@ local UICorner_17 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
 local ImageButton_2 = Instance.new("ImageButton")
 local click = Instance.new("Sound")
-click.Name = click
-click.SoundId = 4239729823
-click.Parent = shabadabadoobalikeameebo
+
 
 --Properties:
 
@@ -63,6 +61,10 @@ Frame.Parent = shabadabadoobalikeameebo
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.Position = UDim2.new(0.246238008, 0, 0.262582064, 0)
 Frame.Size = UDim2.new(0, 483, 0, 216)
+
+click.Name = click
+click.SoundId = 4239729823
+click.Parent = Frame
 
 UICorner.Parent = Frame
 
