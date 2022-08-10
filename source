@@ -3,71 +3,111 @@
 
 -- Instances:
 
-
-local ScreenGui = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
+local shabadabadoobalikeameebo = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local breadb = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local jumpscarespam = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local animkill = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local william = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local springlock = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local unlock = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
-local jumpspam2 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local crash = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local UIGradient_2 = Instance.new("UIGradient")
-local danger = Instance.new("TextLabel")
-local crash_2 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local UIGradient_3 = Instance.new("UIGradient")
-local more = Instance.new("TextLabel")
-local UIGradient_4 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
-local UIGradient_5 = Instance.new("UIGradient")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local open = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local musicgui = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local widefred = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local fnafsb = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local montymusic = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local chicamusic = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local commodore = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local circus = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ImageButton_2 = Instance.new("ImageButton")
+
+
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+shabadabadoobalikeameebo.Name = "shabadabadoobalikeameebo"
+shabadabadoobalikeameebo.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+shabadabadoobalikeameebo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-main.Name = "main"
-main.Parent = ScreenGui
-main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-main.Position = UDim2.new(0.0478465334, 0, 0.324911892, 0)
-main.Size = UDim2.new(0, 211, 0, 313)
+Frame.Parent = shabadabadoobalikeameebo
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.246238008, 0, 0.262582064, 0)
+Frame.Size = UDim2.new(0, 483, 0, 216)
 
-UICorner.CornerRadius = UDim.new(0, 10)
-UICorner.Parent = main
 
-ScrollingFrame.Parent = main
+UICorner.Parent = Frame
+
+ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
-ScrollingFrame.Position = UDim2.new(0.0540540777, 0, 0.0371429138, 0)
-ScrollingFrame.Size = UDim2.new(0, 197, 0, 301)
+ScrollingFrame.Size = UDim2.new(0, 483, 0, 216)
+ScrollingFrame.BottomImage = "rbxassetid://457431165"
+ScrollingFrame.CanvasPosition = Vector2.new(0, 66)
+ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame.MidImage = "rbxassetid://457431032"
+ScrollingFrame.ScrollBarThickness = 25
+ScrollingFrame.TopImage = "rbxassetid://457430207"
+ScrollingFrame.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
-breadb.Name = "breadb"
-breadb.Parent = ScrollingFrame
-breadb.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-breadb.Position = UDim2.new(0.121827409, 0, 0.0246774014, 0)
-breadb.Size = UDim2.new(0, 150, 0, 35)
-breadb.Font = Enum.Font.Cartoon
-breadb.Text = "Breadbear Army"
-breadb.TextColor3 = Color3.fromRGB(255, 255, 255)
-breadb.TextScaled = true
-breadb.TextSize = 14.000
-breadb.TextWrapped = true
-breadb.MouseButton1Down:Connect(function()
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton.Position = UDim2.new(0.0846160799, 0, 0.0532407425, 0)
+TextButton.Size = UDim2.new(0, 135, 0, 50)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Unlock All! (Breaks Leaderboard)"
+TextButton.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton.TextSize = 13.000
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	
+	game.Players.LocalPlayer.UserId = 23467579
+end)
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_2.Position = UDim2.new(0.535961866, 0, 0.0532407425, 0)
+TextButton_2.Size = UDim2.new(0, 135, 0, 50)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "Breadbear Army"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 13.000
+TextButton_2.TextStrokeTransparency = 0.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:Connect(function()
+	
 	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
 		local Player = game.Workspace:FindFirstChild(v.Name)
 		game:GetService("ReplicatedStorage").Characters.Breadbear:FireServer(Player,Player.Humanoid)
@@ -75,67 +115,20 @@ breadb.MouseButton1Down:Connect(function()
 	end
 end)
 
-UICorner_2.CornerRadius = UDim.new(0, 10)
-UICorner_2.Parent = breadb
+UICorner_3.Parent = TextButton_2
 
-jumpscarespam.Name = "jumpscarespam"
-jumpscarespam.Parent = ScrollingFrame
-jumpscarespam.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-jumpscarespam.Position = UDim2.new(0.121827409, 0, 0.107249387, 0)
-jumpscarespam.Size = UDim2.new(0, 150, 0, 35)
-jumpscarespam.Font = Enum.Font.Cartoon
-jumpscarespam.Text = "Spamscare"
-jumpscarespam.TextColor3 = Color3.fromRGB(255, 255, 255)
-jumpscarespam.TextScaled = true
-jumpscarespam.TextSize = 14.000
-jumpscarespam.TextWrapped = true
-jumpscarespam.MouseButton1Down:Connect(function()
-	local args = {
-		[1] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
-		[2] = game:GetService("Players").LocalPlayer.Character
-	}
-	while wait(0.5) do
-		game:GetService("ReplicatedStorage").Jumpscares.baby:FireServer(unpack(args))
-	end
-end)
-
-UICorner_3.CornerRadius = UDim.new(0, 10)
-UICorner_3.Parent = jumpscarespam
-animkill.Name = "break"
-animkill.Parent = ScrollingFrame
-animkill.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-animkill.Position = UDim2.new(0.121827409, 0, 0.187439188, 0)
-animkill.Size = UDim2.new(0, 150, 0, 35)
-animkill.Font = Enum.Font.Cartoon
-animkill.Text = "Break Animations"
-animkill.TextColor3 = Color3.fromRGB(255, 255, 255)
-animkill.TextScaled = true
-animkill.TextSize = 14.000
-animkill.TextWrapped = true
-animkill.MouseButton1Down:Connect(function()
-	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
-		local Player = game.Workspace:FindFirstChild(v.Name)
-		game:GetService("ReplicatedStorage").Characters.Human:FireServer(Player,Player.Humanoid)
-
-	end
-end)
-
-
-UICorner_4.CornerRadius = UDim.new(0, 10)
-UICorner_4.Parent = animkill
-
-william.Name = "william"
-william.Parent = ScrollingFrame
-william.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-william.Position = UDim2.new(0.121827409, 0, 0.265461713, 0)
-william.Size = UDim2.new(0, 150, 0, 35)
-william.Font = Enum.Font.Cartoon
-william.Text = "THE MEN BEHIND THE SLAUGHTER"
-william.TextColor3 = Color3.fromRGB(170, 0, 255)
-william.TextScaled = true
-william.TextSize = 14.000
-william.TextWrapped = true
-william.MouseButton1Down:Connect(function()
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_3.Position = UDim2.new(0.0825457275, 0, 0.192129642, 0)
+TextButton_3.Size = UDim2.new(0, 135, 0, 50)
+TextButton_3.Font = Enum.Font.GothamBold
+TextButton_3.Text = "The Men Behind The Slaughter"
+TextButton_3.TextColor3 = Color3.fromRGB(85, 0, 127)
+TextButton_3.TextSize = 13.000
+TextButton_3.TextStrokeTransparency = 0.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:Connect(function()
+	
 	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
 		local Player = game.Workspace:FindFirstChild(v.Name)
 		game:GetService("ReplicatedStorage").Characters.PurpleGuy:FireServer(Player,Player.Humanoid)
@@ -143,21 +136,41 @@ william.MouseButton1Down:Connect(function()
 	end
 end)
 
-UICorner_5.CornerRadius = UDim.new(0, 10)
-UICorner_5.Parent = william
+UICorner_4.Parent = TextButton_3
 
-springlock.Name = "springlock"
-springlock.Parent = ScrollingFrame
-springlock.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-springlock.Position = UDim2.new(0.121827409, 0, 0.36533463, 0)
-springlock.Size = UDim2.new(0, 150, 0, 35)
-springlock.Font = Enum.Font.Cartoon
-springlock.Text = "Springlock All"
-springlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-springlock.TextScaled = true
-springlock.TextSize = 14.000
-springlock.TextWrapped = true
-springlock.MouseButton1Down:Connect(function()
+ImageLabel.Parent = ScrollingFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.757763982, 0, 0.768518507, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxassetid://202355492"
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.148515344, 0, 0.768518507, 0)
+TextLabel.Size = UDim2.new(0, 296, 0, 86)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "v2.0 if you find any issues please comment them in the video you got this script from."
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_4.Position = UDim2.new(0.533891439, 0, 0.192129642, 0)
+TextButton_4.Size = UDim2.new(0, 135, 0, 50)
+TextButton_4.Font = Enum.Font.GothamBold
+TextButton_4.Text = "Springlock All"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 13.000
+TextButton_4.TextStrokeTransparency = 0.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:Connect(function()
+	
 	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
 		local Player = game.Workspace:FindFirstChild(v.Name)
 		game:GetService("ReplicatedStorage").Characters.SpringTrap:FireServer(Player,Player.Humanoid)
@@ -165,167 +178,341 @@ springlock.MouseButton1Down:Connect(function()
 	end
 end)
 
-UICorner_6.CornerRadius = UDim.new(0, 10)
-UICorner_6.Parent = springlock
+UICorner_5.Parent = TextButton_4
 
-unlock.Name = "unlock"
-unlock.Parent = ScrollingFrame
-unlock.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-unlock.Position = UDim2.new(0.121827409, 0, 0.459602535, 0)
-unlock.Size = UDim2.new(0, 150, 0, 35)
-unlock.Font = Enum.Font.Cartoon
-unlock.Text = "Unlock All! (Events, Badges, Gamepasses.)"
-unlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-unlock.TextScaled = true
-unlock.TextSize = 14.000
-unlock.TextWrapped = true
-unlock.MouseButton1Down:Connect(function()
-	game.Players.LocalPlayer.UserId = 23467579
-end)
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_5.Position = UDim2.new(0.0825456753, 0, 0.321759284, 0)
+TextButton_5.Size = UDim2.new(0, 135, 0, 50)
+TextButton_5.Font = Enum.Font.GothamBold
+TextButton_5.Text = "Break Animations"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 13.000
+TextButton_5.TextStrokeTransparency = 0.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+		game:GetService("ReplicatedStorage").Characters.Human:FireServer(Player,Player.Humanoid)
 
-UICorner_7.CornerRadius = UDim.new(0, 10)
-UICorner_7.Parent = unlock
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(255, 255, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
-UIGradient.Parent = unlock
-
-jumpspam2.Name = "jumpspam2"
-jumpspam2.Parent = ScrollingFrame
-jumpspam2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-jumpspam2.Position = UDim2.new(0.121827409, 0, 0.554412246, 0)
-jumpspam2.Size = UDim2.new(0, 150, 0, 35)
-jumpspam2.Font = Enum.Font.Cartoon
-jumpspam2.Text = "Spamscare (Glamrock)"
-jumpspam2.TextColor3 = Color3.fromRGB(255, 255, 255)
-jumpspam2.TextScaled = true
-jumpspam2.TextSize = 14.000
-jumpspam2.TextWrapped = true
-jumpspam2.MouseButton1Down:Connect(function(jumpspam2)
-	-- glamrock scare
-
-	local args = {
-		[1] = game:GetService("Players").LocalPlayer.Character.LowerTorso,
-		[2] = game:GetService("Players").LocalPlayer.Character
-	}
-	while wait(0.5) do
-		game:GetService("ReplicatedStorage").Jumpscares.Glamrock:FireServer(unpack(args))
 	end
 end)
 
+UICorner_6.Parent = TextButton_5
 
-UICorner_8.CornerRadius = UDim.new(0, 10)
-UICorner_8.Parent = jumpspam2
-
-crash.Name = "crash"
-crash.Parent = ScrollingFrame
-crash.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
-crash.Position = UDim2.new(0.121827409, 0, 0.79083395, 0)
-crash.Size = UDim2.new(0, 150, 0, 35)
-crash.Font = Enum.Font.Bangers
-crash.Text = "Crash Server"
-crash.TextColor3 = Color3.fromRGB(255, 255, 255)
-crash.TextScaled = true
-crash.TextSize = 14.000
-crash.TextWrapped = true
-crash.MouseButton1Down:Connect(function(crash)
+TextButton_6.Parent = ScrollingFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_6.Position = UDim2.new(0.53389138, 0, 0.321759284, 0)
+TextButton_6.Size = UDim2.new(0, 135, 0, 50)
+TextButton_6.Font = Enum.Font.GothamBold
+TextButton_6.Text = "Crash Most Players (May Include You)"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_6.TextSize = 13.000
+TextButton_6.TextStrokeTransparency = 0.000
+TextButton_6.TextWrapped = true
+TextButton_6.MouseButton1Down:Connect(function()
+	
 	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
 		local Player = game.Workspace:FindFirstChild(v.Name)
 		while wait (0.2) do
-		game:GetService("ReplicatedStorage").Characters.Breadbear:FireServer(Player,Player.Humanoid)
+			game:GetService("ReplicatedStorage").Characters.Breadbear:FireServer(Player,Player.Humanoid)
 
+		end
 	end
+end)
+
+UICorner_7.Parent = TextButton_6
+
+TextButton_7.Parent = ScrollingFrame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_7.BackgroundTransparency = 0.350
+TextButton_7.Position = UDim2.new(0.0822429806, 0, 0.638888836, 0)
+TextButton_7.Size = UDim2.new(0, 341, 0, 50)
+TextButton_7.Font = Enum.Font.GothamBold
+TextButton_7.Text = "Teleport GUI (Coming Soon)"
+TextButton_7.TextColor3 = Color3.fromRGB(136, 136, 136)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 13.000
+TextButton_7.TextStrokeTransparency = 0.710
+TextButton_7.TextTransparency = 0.350
+TextButton_7.TextWrapped = true
+
+UICorner_8.Parent = TextButton_7
+
+TextButton_8.Parent = ScrollingFrame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_8.Position = UDim2.new(0.0822429806, 0, 0.5, 0)
+TextButton_8.Size = UDim2.new(0, 341, 0, 50)
+TextButton_8.Font = Enum.Font.DenkOne
+TextButton_8.Text = "🎶 Music GUI 🎶"
+TextButton_8.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 13.000
+TextButton_8.TextStrokeTransparency = 0.000
+TextButton_8.TextWrapped = true
+TextButton_8.MouseButton1Down:Connect(function()
+	
+	musicgui.Visible = true
+end)
+
+UICorner_9.Parent = TextButton_8
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 186, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
+UIGradient.Parent = Frame
+
+ImageButton.Parent = Frame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.89026916, 0, -0.0972222239, 0)
+ImageButton.Size = UDim2.new(0, 53, 0, 50)
+ImageButton.Image = "rbxassetid://1249929622"
+ImageButton.MouseButton1Down:Connect(function()
+	
+	Frame.Visible = false
+end)
+
+TextLabel_2.Parent = shabadabadoobalikeameebo
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.439124495, 0, 0.890590787, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Oswald
+TextLabel_2.Text = "v2.0 Animatronic Hell"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.710
+TextLabel_2.TextWrapped = true
+
+open.Name = "open"
+open.Parent = shabadabadoobalikeameebo
+open.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+open.Position = UDim2.new(0, 0, -2.32830644e-08, 0)
+open.Size = UDim2.new(0, 83, 0, 50)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(85, 0, 0)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+open.TextStrokeTransparency = 0.000
+open.TextWrapped = true
+open.MouseButton1Down:Connect(function()
+	
+	Frame.Visible = true
+end)
+
+UICorner_10.Parent = open
+
+musicgui.Name = "musicgui"
+musicgui.Parent = shabadabadoobalikeameebo
+musicgui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+musicgui.Position = UDim2.new(0, 0, 0.65645504, 0)
+musicgui.Size = UDim2.new(0, 218, 0, 175)
+musicgui.Visible = false
+
+UICorner_11.Parent = musicgui
+
+ScrollingFrame_2.Parent = musicgui
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.Size = UDim2.new(0, 218, 0, 175)
+ScrollingFrame_2.BottomImage = "rbxassetid://457431165"
+ScrollingFrame_2.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame_2.MidImage = "rbxassetid://457431032"
+ScrollingFrame_2.ScrollBarThickness = 25
+ScrollingFrame_2.TopImage = "rbxassetid://457430207"
+ScrollingFrame_2.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ScrollingFrame_2.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+TextLabel_3.Parent = ScrollingFrame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.182061374, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 122, 0, 26)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Be careful! the song you choose may not stop playing."
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextStrokeTransparency = 0.000
+TextLabel_3.TextWrapped = true
+
+widefred.Name = "widefred"
+widefred.Parent = ScrollingFrame_2
+widefred.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+widefred.Position = UDim2.new(0.177321658, 0, 0.0785449222, 0)
+widefred.Size = UDim2.new(0, 135, 0, 32)
+widefred.Font = Enum.Font.GothamBold
+widefred.Text = "Wide Freddy Song"
+widefred.TextColor3 = Color3.fromRGB(255, 255, 255)
+widefred.TextSize = 13.000
+widefred.TextStrokeTransparency = 0.000
+widefred.TextWrapped = true
+widefred.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+
+
+
+
+
+		game.ReplicatedStorage.Music.Bread:FireServer(Player, Player.Humanoid)
+		end
+end)
+
+UICorner_12.Parent = widefred
+
+fnafsb.Name = "fnafsb"
+fnafsb.Parent = ScrollingFrame_2
+fnafsb.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+fnafsb.Position = UDim2.new(0.172734499, 0, 0.195687771, 0)
+fnafsb.Size = UDim2.new(0, 135, 0, 32)
+fnafsb.Font = Enum.Font.GothamBold
+fnafsb.Text = "FNaF: SB Music Box"
+fnafsb.TextColor3 = Color3.fromRGB(255, 255, 255)
+fnafsb.TextSize = 13.000
+fnafsb.TextStrokeTransparency = 0.000
+fnafsb.TextWrapped = true
+fnafsb.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+
+
+
+
+
+		game.ReplicatedStorage.Music.Glam:FireServer(Player, Player.Humanoid)
+		end
+end)
+
+UICorner_13.Parent = fnafsb
+
+montymusic.Name = "montymusic"
+montymusic.Parent = ScrollingFrame_2
+montymusic.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+montymusic.Position = UDim2.new(0.177321658, 0, 0.315687776, 0)
+montymusic.Size = UDim2.new(0, 135, 0, 32)
+montymusic.Font = Enum.Font.GothamBold
+montymusic.Text = "Monty's Music"
+montymusic.TextColor3 = Color3.fromRGB(255, 255, 255)
+montymusic.TextSize = 13.000
+montymusic.TextStrokeTransparency = 0.000
+montymusic.TextWrapped = true
+montymusic.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+
+
+
+
+
+		game.ReplicatedStorage.Music.GlamRox:FireServer(Player, Player.Humanoid)
 	end
-	end)
+end)
+	
 
 
+UICorner_14.Parent = montymusic
 
-UICorner_9.CornerRadius = UDim.new(0, 10)
-UICorner_9.Parent = crash
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 127)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 85, 127))}
-UIGradient_2.Parent = crash
-
-danger.Name = "danger"
-danger.Parent = ScrollingFrame
-danger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-danger.BackgroundTransparency = 1.000
-danger.Position = UDim2.new(0.065989852, 0, 0.677576363, 0)
-danger.Size = UDim2.new(0, 163, 0, 50)
-danger.Font = Enum.Font.GothamBlack
-danger.Text = "Danger Zone"
-danger.TextColor3 = Color3.fromRGB(255, 85, 0)
-danger.TextScaled = true
-danger.TextSize = 14.000
-danger.TextWrapped = true
-
-
-UICorner_10.CornerRadius = UDim.new(0, 10)
-UICorner_10.Parent = crash_2
-
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 127)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 85, 127))}
-UIGradient_3.Parent = crash_2
-
-more.Name = "more"
-more.Parent = ScrollingFrame
-more.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-more.BackgroundTransparency = 1.000
-more.Position = UDim2.new(0.142131984, 0, 0.929557979, 0)
-more.Size = UDim2.new(0, 141, 0, 18)
-more.Font = Enum.Font.GothamBlack
-more.Text = "More coming soon!"
-more.TextColor3 = Color3.fromRGB(85, 255, 0)
-more.TextScaled = true
-more.TextSize = 14.000
-more.TextWrapped = true
-
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
-UIGradient_4.Rotation = -90
-UIGradient_4.Parent = main
-
-TextLabel.Parent = main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.165876865, 0, -0.210862637, 0)
-TextLabel.Size = UDim2.new(0, 141, 0, 54)
-TextLabel.Font = Enum.Font.GothamBlack
-TextLabel.Text = "Animatronic Hell UI | v1.5"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextTransparency = 0.270
-TextLabel.TextWrapped = true
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 2, 0)), ColorSequenceKeypoint.new(0.14, Color3.fromRGB(204, 34, 0)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(226, 72, 0)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 119, 1)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(255, 205, 46)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 239, 66))}
-UIGradient_5.Rotation = -90
-UIGradient_5.Parent = TextLabel
+chicamusic.Name = "chicamusic"
+chicamusic.Parent = ScrollingFrame_2
+chicamusic.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+chicamusic.Position = UDim2.new(0.177321658, 0, 0.438544899, 0)
+chicamusic.Size = UDim2.new(0, 135, 0, 32)
+chicamusic.Font = Enum.Font.GothamBold
+chicamusic.Text = "Chica's Guitar"
+chicamusic.TextColor3 = Color3.fromRGB(255, 255, 255)
+chicamusic.TextSize = 13.000
+chicamusic.TextStrokeTransparency = 0.000
+chicamusic.TextWrapped = true
+chicamusic.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
 
 
 
 
 
+		game.ReplicatedStorage.Music.GlamChica:FireServer(Player, Player.Humanoid)
+	end
+end)
 
 
 
-local function callback(Text)
- if Text == "Button1 text" then
-  print ("Answer")
-elseif Text == ("Button2 text") then
- print ("Answer2")
- end
-end
+UICorner_15.Parent = chicamusic
 
-local NotificationBindable = Instance.new("BindableFunction")
-NotificationBindable.OnInvoke = callback
---
-game.StarterGui:SetCore("SendNotification",  {
- Title = "v2.0";
- Text = "it will be good i swear";
- Icon = "3719854996";
- Duration = 5;
- Button1 = "ok";
- Button2 = "egerg";
- Callback = NotificationBindable;
-})
+commodore.Name = "commodore"
+commodore.Parent = ScrollingFrame_2
+commodore.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+commodore.Position = UDim2.new(0.177321658, 0, 0.564259171, 0)
+commodore.Size = UDim2.new(0, 135, 0, 32)
+commodore.Font = Enum.Font.GothamBold
+commodore.Text = "Toreador March MusBox"
+commodore.TextColor3 = Color3.fromRGB(255, 255, 255)
+commodore.TextSize = 13.000
+commodore.TextStrokeTransparency = 0.000
+commodore.TextWrapped = true
+commodore.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
 
 
 
+
+
+		game.ReplicatedStorage.Music.MainMusic:FireServer(Player, Player.Humanoid)
+	end
+end)
+
+
+UICorner_16.Parent = commodore
+
+circus.Name = "circus"
+circus.Parent = ScrollingFrame_2
+circus.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+circus.Position = UDim2.new(0.177321658, 0, 0.684259176, 0)
+circus.Size = UDim2.new(0, 135, 0, 32)
+circus.Font = Enum.Font.GothamBold
+circus.Text = "Circus"
+circus.TextColor3 = Color3.fromRGB(255, 255, 255)
+circus.TextSize = 13.000
+circus.TextStrokeTransparency = 0.000
+circus.TextWrapped = true
+circus.MouseButton1Down:Connect(function()
+	
+	for _,v in pairs(game:GetService("Players"):GetPlayers()) do
+		local Player = game.Workspace:FindFirstChild(v.Name)
+
+
+
+
+
+		game.ReplicatedStorage.Music.SideMusic:FireServer(Player, Player.Humanoid)
+	end
+end)
+
+
+UICorner_17.Parent = circus
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 186, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
+UIGradient_2.Parent = musicgui
+
+ImageButton_2.Parent = musicgui
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.Position = UDim2.new(0.871920526, 0, -0.131507933, 0)
+ImageButton_2.Size = UDim2.new(0, 53, 0, 50)
+ImageButton_2.Image = "rbxassetid://1249929622"
+ImageButton_2.MouseButton1Down:Connect(function()
+	
+	musicgui.Visible = false
+end)
