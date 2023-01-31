@@ -27,7 +27,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
-local selectsound = Instance.new("Sound")
+
 local unlocked = false
 local playing = false
 
@@ -50,10 +50,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextTransparency = 0.710
 TextLabel.TextWrapped = true
 
-selectsound.SoundId = 2513067004
-selectsound.Volume = 1
-selectsound.Name = "select"
-selectsound.Parent = k00pa23hf73476hdf73hf73hf.Frame
+
 
 
 open.Name = "open"
@@ -156,7 +153,7 @@ TextButton.TextSize = 14.000
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
-	selectsound.Playing = true
+	
 	if unlocked == false	then
 		game.Players.LocalPlayer.UserId = 23467579
 		TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
@@ -234,7 +231,7 @@ TextButton_3.TextStrokeColor3 = Color3.fromRGB(0, 0, 127)
 TextButton_3.TextStrokeTransparency = 0.000
 TextButton_3.TextWrapped = true
 TextButton_3.MouseButton1Down:Connect(function()
-	selectsound.Playing = true
+	
 	k00pa23hf73476hdf73hf73hf.Frame.Visible = false
 end)
 
