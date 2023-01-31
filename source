@@ -166,10 +166,12 @@ TextButton.MouseButton1Down:Connect(function()
 		game:GetService("Players").LocalPlayer.UserId = 23467579
 		TextButton.Text = "Toggle Unlock All: ON"
 		TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+		unlocked = true
 	else
 		game:GetService("Players").LocalPlayer.UserId = useridentity.Value
 		TextButton.Text = "Toggle Unlock All: OFF"
 		TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+		unlocked = false
 	end
 end)
 UICorner_5.Parent = TextButton
