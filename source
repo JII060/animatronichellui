@@ -34,7 +34,7 @@ local playing = false
 --Properties:
 
 k00pa23hf73476hdf73hf73hf.Name = "k00pa23hf73476hdf73hf73hf"
-k00pa23hf73476hdf73hf73hf.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+k00pa23hf73476hdf73hf73hf.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
 k00pa23hf73476hdf73hf73hf.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel.Parent = k00pa23hf73476hdf73hf73hf
@@ -66,6 +66,10 @@ open.TextSize = 14.000
 open.TextStrokeTransparency = 0.000
 open.TextWrapped = true
 open.Visible = true
+open.MouseButton1Down:Connect(function()
+	k00pa23hf73476hdf73hf73hf.Frame.Visible = true
+end)
+
 
 UICorner.Parent = open
 
