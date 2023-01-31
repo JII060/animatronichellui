@@ -65,6 +65,7 @@ open.TextScaled = true
 open.TextSize = 14.000
 open.TextStrokeTransparency = 0.000
 open.TextWrapped = true
+open.Visible = true
 
 UICorner.Parent = open
 
@@ -73,7 +74,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 Frame.BorderColor3 = Color3.fromRGB(38, 39, 43)
 Frame.Position = UDim2.new(0.294074088, 0, 0.230061382, 0)
 Frame.Size = UDim2.new(0, 356, 0, 231)
-Frame.Visible = false
+Frame.Visible = true
 
 UICorner_2.Parent = Frame
 
