@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local useridentity = game:GetService("Players").LocalPlayer.UserId
+local useridentity = Instance.new("StringValue")
 local k00pa23hf73476hdf73hf73hf = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local open = Instance.new("TextButton")
@@ -36,6 +36,10 @@ k00pa23hf73476hdf73hf73hf.Name = "k00pa23hf73476hdf73hf73hf"
 k00pa23hf73476hdf73hf73hf.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 k00pa23hf73476hdf73hf73hf.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 k00pa23hf73476hdf73hf73hf.ResetOnSpawn = false
+
+useridentity.Value = game:GetService("Players").LocalPlayer.UserId
+useridentity.Parent = k00pa23hf73476hdf73hf73hf
+
 
 TextLabel.Parent = k00pa23hf73476hdf73hf73hf
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
