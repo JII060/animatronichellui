@@ -162,18 +162,16 @@ TextButton.TextSize = 14.000
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
-	
 	if unlocked == false then
-	game.Players.LocalPlayer.UserId = 23467579
+		game:GetService("Players").LocalPlayer.UserId = 23467579
+		TextButton.Text = "Toggle Unlock All: ON"
 		TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
-		unlocked = true
-	end
-	if unlocked == true then
-		game.Players.LocalPlayer.UserId = useridentity.Value
+	else
+		game:GetService("Players").LocalPlayer.UserId = useridentity.Value
+		TextButton.Text = "Toggle Unlock All: OFF"
 		TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-		unlocked = false
 	end
-	end)
+end)
 UICorner_5.Parent = TextButton
 
 TextLabel_3.Parent = ScrollingFrame
