@@ -247,5 +247,5 @@ UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.from
 UIGradient.Rotation = 90
 UIGradient.Parent = TextButton_3
 
-k00pa23hf73476hdf73hf73hf:Clone().Parent = game.StarterGui
+k00pa23hf73476hdf73hf73hf:Clone().Parent = game.Players.LocalPlayer.PlayerGui
 
