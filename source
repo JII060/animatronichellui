@@ -27,7 +27,7 @@ local TextButton_3 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 
-local unlocked = false
+unlocked = false
 local playing = false
 
 --Properties:
