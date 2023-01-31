@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local useridentity = userid
+local useridentity = game.Players.LocalPlayer.UserId
 local k00pa23hf73476hdf73hf73hf = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local open = Instance.new("TextButton")
