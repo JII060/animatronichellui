@@ -132,7 +132,7 @@ ImageButton.MouseButton1Down:Connect(function()
 
 		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
 		playing = false
-
+ImageButton.Image = "rbxassetid://5550558934"
 	end
 end)
 
@@ -156,7 +156,7 @@ TextButton.Position = UDim2.new(0.266853929, 0, 0.0853190273, 0)
 TextButton.Size = UDim2.new(0, 165, 0, 50)
 TextButton.Font = Enum.Font.Unknown
 TextButton.Text = "Toggle Unlock All"
-TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextStrokeTransparency = 0.000
@@ -174,7 +174,7 @@ TextButton.MouseButton1Down:Connect(function()
 		unlocked = true
 	end
 	if unlocked == true then
-		game.Players.LocalPlayer.UserId = useridentity
+		game.Players.LocalPlayer.UserId = useridentity.Value
 		TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 	end
 	end)
