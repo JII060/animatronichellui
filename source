@@ -176,6 +176,7 @@ TextButton.MouseButton1Down:Connect(function()
 	if unlocked == true then
 		game.Players.LocalPlayer.UserId = useridentity.Value
 		TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+		unlocked = false
 	end
 	end)
 UICorner_5.Parent = TextButton
