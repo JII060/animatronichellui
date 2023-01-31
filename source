@@ -3,13 +3,12 @@
 
 -- Instances:
 
-
+local useridentity = game:GetService("Players").LocalPlayer.UserId
 local k00pa23hf73476hdf73hf73hf = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local open = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
-local useridentity = game.Players.LocalPlayer.UserId
 local UICorner_2 = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local musicid = Instance.new("TextBox")
