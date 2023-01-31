@@ -34,7 +34,7 @@ local playing = false
 --Properties:
 
 k00pa23hf73476hdf73hf73hf.Name = "k00pa23hf73476hdf73hf73hf"
-k00pa23hf73476hdf73hf73hf.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+k00pa23hf73476hdf73hf73hf.Parent = game.Players.LocalPlayer:WaitForChild("StarterGui")
 k00pa23hf73476hdf73hf73hf.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel.Parent = k00pa23hf73476hdf73hf73hf
@@ -247,5 +247,5 @@ UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.from
 UIGradient.Rotation = 90
 UIGradient.Parent = TextButton_3
 
-
+k00pa23hf73476hdf73hf73hf:Clone().Parent = game.StarterGui
 
