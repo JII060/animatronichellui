@@ -160,8 +160,13 @@ TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:Connect(function()
 	
-	if unlocked == false	then
-		game.Players.LocalPlayer.UserId = 23467579
+	if unlocked == false then
+		if game.CreatorType == Enum.CreatorType.User then
+			game.Players.LocalPlayer.UserId = game.CreatorId
+		end
+		if game.CreatorType == Enum.CreatorType.Group then
+			game.Players.LocalPlayer.UserId = game:GetService("GroupService"):GetGroupInfoAsync(game.CreatorId).Owner.Id
+		end
 		TextButton.TextColor3 = Color3.fromRGB(85, 255, 0)
 		unlocked = true
 	end
