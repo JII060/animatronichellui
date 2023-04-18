@@ -102,9 +102,8 @@ local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 reznov = true
 playing = false
-while wait(0.1) do
-	reznov = game.Workspace.IsDay.Value
-end
+
+
 
 
 
