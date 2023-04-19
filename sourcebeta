@@ -1,6 +1,3 @@
--- Animatronic Hell source code
--- Do not skid for the love of god
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -34,6 +31,9 @@ local MusicButton = Instance.new("ImageButton")
 local UICorner_5 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local fixbutton = Instance.new("TextButton")
+local fix = Instance.new("TextLabel")
+local fix_2 = Instance.new("TextLabel")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local CreditsButton = Instance.new("ImageButton")
 local UICorner_6 = Instance.new("UICorner")
@@ -103,18 +103,24 @@ local Line3 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
 local Title4 = Instance.new("TextLabel")
 local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
-local clo = Instance.new("TextButton")
-local op = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
 local playing = false
+local LPlayer = game.Players.LocalPlayer
+local oorc = true
 --Functions:
+local function OnKeyPressOrClick()
+	if oorc == true then
+		Main.Visible = false
+	else
+		Main.Visible = true
+	end
+end
+
 local function UnlockAllV2()
-	local Player = game.Players.LocalPlayer
-	local Character = Player.Character
 	local function UnlockDevCharacters()
 		local function Unlock()
-			local UIArea = Player.PlayerGui.MainMenu["CharFrames"].Classic.Classic3
+			local UIArea = LPlayer.PlayerGui.MainMenu["Char_Frames"].Classic.Classic3
 			UIArea.Visible = true
 			for _, v in pairs(UIArea:GetChildren()) do
 				if v:IsA("ImageButton") then
@@ -126,7 +132,7 @@ local function UnlockAllV2()
 	end
 
 	local function UnlockOtherCharacters()
-		for _,v in pairs(Player.PlayerGui.MainMenu:GetDescendants()) do
+		for _,v in pairs(LPlayer.PlayerGui.MainMenu:GetDescendants()) do
 			if v:IsA("ImageButton") then
 				if v:FindFirstChild("Viewport")then
 					v.Image = ""
@@ -208,22 +214,7 @@ Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Shadow.BorderSizePixel = 0
 Shadow.Size = UDim2.new(0, 277, 0, 204)
 
-clo.Name = "close"
-clo.Parent = Shadow
-clo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-clo.BackgroundTransparency = 1.000
-clo.Position = UDim2.new(0.902526975, 0, 0.936274409, 0)
-clo.Size = UDim2.new(0, 27, 0, 13)
-clo.Font = Enum.Font.SourceSans
-clo.Text = "🟥"
-clo.TextColor3 = Color3.fromRGB(0, 0, 0)
-clo.TextScaled = true
-clo.TextSize = 14.000
-clo.TextWrapped = true
-clo.MouseButton1Down:Connect(function()
-	Main.Visible = false
-	op.Visible = true
-end)
+
 
 UICorner.CornerRadius = UDim.new(0.0144388042, 0)
 UICorner.Parent = Shadow
@@ -718,6 +709,70 @@ end)
 UITextSizeConstraint_14.Parent = TextButton_3
 UITextSizeConstraint_14.MaxTextSize = 32
 
+fixbutton.Name = "fixbutton"
+fixbutton.Parent = Music
+fixbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fixbutton.BorderSizePixel = 0
+fixbutton.Position = UDim2.new(0.296740294, 0, 6.34520388, 0)
+fixbutton.Selectable = false
+fixbutton.Size = UDim2.new(0.390221059, 0, 1.0425576, 0)
+fixbutton.ZIndex = 2
+fixbutton.Text = ""
+fixbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+fixbutton.TextScaled = true
+fixbutton.TextSize = 14.000
+fixbutton.TextWrapped = true
+fixbutton.TextXAlignment = Enum.TextXAlignment.Left
+fixbutton.MouseButton1Down:Connect(function()
+	playing = false
+	TextLabel_9.Text = "Play"
+end)
+
+UITextSizeConstraint_17.Parent = fixbutton
+UITextSizeConstraint_17.MaxTextSize = 32
+
+fix.Name = "fix"
+fix.Parent = fixbutton
+fix.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix.BackgroundTransparency = 1.000
+fix.BorderSizePixel = 0
+fix.Position = UDim2.new(0.0990609303, 0, 0.130663738, 0)
+fix.Size = UDim2.new(0.796587944, 0, 0.706375897, 0)
+fix.ZIndex = 2
+fix.Text = "Fix"
+fix.TextColor3 = Color3.fromRGB(255, 255, 255)
+fix.TextScaled = true
+fix.TextSize = 33.000
+fix.TextWrapped = true
+
+UITextSizeConstraint_18.Parent = fix
+UITextSizeConstraint_18.MaxTextSize = 32
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_5.Rotation = 80
+UIGradient_5.Parent = fixbutton
+
+UICorner_14.Parent = fixbutton
+
+fix_2.Name = "fix"
+fix_2.Parent = Music
+fix_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fix_2.BackgroundTransparency = 1.000
+fix_2.BorderSizePixel = 0
+fix_2.Position = UDim2.new(0.0876704678, 0, 5.6331315, 0)
+fix_2.Size = UDim2.new(0.796587944, 0, 0.706375897, 0)
+fix_2.ZIndex = 2
+fix_2.Text = "Button frozen? Click the Fix button below."
+fix_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+fix_2.TextScaled = true
+fix_2.TextSize = 33.000
+fix_2.TextWrapped = true
+
+UITextSizeConstraint_19.Parent = fix_2
+UITextSizeConstraint_19.MaxTextSize = 32
+
+
+
 TextLabel_9.Parent = TextButton_3
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.BackgroundTransparency = 1.000
@@ -946,37 +1001,15 @@ UITextSizeConstraint_23.MaxTextSize = 45
 
 
 
-
-op.Name = "open"
-op.Parent = Ascension1512197256136715140
-op.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
-op.Position = UDim2.new(-0.000586822629, 0, 0.85367018, 0)
-op.Size = UDim2.new(0, 66, 0, 65)
-op.Font = Enum.Font.Unknown
-op.Text = "OPEN"
-op.TextColor3 = Color3.fromRGB(0, 0, 0)
-op.TextScaled = true
-op.TextSize = 14.000
-op.TextWrapped = true
-op.Visible = false
-op.MouseButton1Down:Connect(function()
-	Main.Visible = true
-	op.Visible = false
-end)
-
-UICorner_19.CornerRadius = UDim.new(0, 30)
-UICorner_19.Parent = op
-
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
-UIGradient_7.Rotation = 70
-UIGradient_7.Parent = op
-
-
 -- Scripts:
+game:GetService("UserInputService").InputBegan:connect(function(input)
+	
+		if input.KeyCode == Enum.KeyCode.RightAlt then 
+			OnKeyPressOrClick()
+		end
+	end)
 
 
 
 
-if game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 then
-	playing = false
-end
+
