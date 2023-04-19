@@ -104,7 +104,7 @@ local close = Instance.new("TextButton")
 local open = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
-playing = false
+local playing = false
 print("Created Instances, moving onto properties.")
 
 --Properties:
