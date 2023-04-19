@@ -559,56 +559,7 @@ UIGradient_2.Parent = TextButton
 UICorner_8.CornerRadius = UDim.new(0.258064508, 0)
 UICorner_8.Parent = TextButton
 
-ToggleDay.Name = "ToggleDay"
-ToggleDay.Parent = CommandsPage
-ToggleDay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ToggleDay.BackgroundTransparency = 0.950
-ToggleDay.BorderSizePixel = 0
-ToggleDay.LayoutOrder = 2
-ToggleDay.Position = UDim2.new(0.407489836, 0, 0, 0)
-ToggleDay.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
-ToggleDay.ZIndex = 2
 
-UICorner_9.CornerRadius = UDim.new(0.183901846, 0)
-UICorner_9.Parent = ToggleDay
-
-TextLabel_6.Parent = ToggleDay
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.0192722511, 0, 0.137926385, 0)
-TextLabel_6.Size = UDim2.new(0.67021215, 0, 0.712619662, 0)
-TextLabel_6.ZIndex = 2
-TextLabel_6.Text = "Toggle Day Animations"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
-
-UITextSizeConstraint_10.Parent = TextLabel_6
-UITextSizeConstraint_10.MaxTextSize = 32
-
-TextButton_2.Parent = ToggleDay
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.71679157, 0, 0.1379264, 0)
-TextButton_2.Selectable = false
-TextButton_2.Size = UDim2.new(0.266099155, 0, 0.712619662, 0)
-TextButton_2.ZIndex = 2
-TextButton_2.Text = ""
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
-TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
-TextButton_2.MouseButton1Down:Connect(function()
-	if workspace.IsDay.Value == false then
-		workspace.IsDay.Value = true
-	else
-		workspace.IsDay.Value = false
-	end
-end)
 
 UITextSizeConstraint_11.Parent = TextButton_2
 UITextSizeConstraint_11.MaxTextSize = 32
@@ -725,15 +676,7 @@ fixbutton.TextScaled = true
 fixbutton.TextSize = 14.000
 fixbutton.TextWrapped = true
 fixbutton.TextXAlignment = Enum.TextXAlignment.Left
-fixbutton.MouseButton1Down:Connect(function()
-	playing = false
-	TextLabel_9.Text = "Play"
-end)
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_5.Rotation = 80
-UIGradient_5.Parent = fixbutton
 
-UICorner_14.Parent = fixbutton
 UITextSizeConstraint_17.Parent = fixbutton
 UITextSizeConstraint_17.MaxTextSize = 32
 
@@ -754,7 +697,11 @@ fix.TextWrapped = true
 UITextSizeConstraint_18.Parent = fix
 UITextSizeConstraint_18.MaxTextSize = 32
 
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_5.Rotation = 80
+UIGradient_5.Parent = fixbutton
 
+UICorner_14.Parent = fixbutton
 
 fix_2.Name = "fix"
 fix_2.Parent = Music
@@ -772,6 +719,22 @@ fix_2.TextWrapped = true
 
 UITextSizeConstraint_19.Parent = fix_2
 UITextSizeConstraint_19.MaxTextSize = 32
+
+fixbutton.MouseButton1Down:Connect(function()
+	playing = false
+	TextLabel_9.Text = "Play"
+end)
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_5.Rotation = 80
+UIGradient_5.Parent = fixbutton
+
+UICorner_14.Parent = fixbutton
+UITextSizeConstraint_17.Parent = fixbutton
+UITextSizeConstraint_17.MaxTextSize = 32
+
+
+
+
 
 
 
