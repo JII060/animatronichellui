@@ -112,8 +112,10 @@ local oorc = true
 local function OnKeyPressOrClick()
 	if oorc == true then
 		Main.Visible = false
+		oorc = false
 	else
 		Main.Visible = true
+		oorc = true
 	end
 end
 
@@ -727,7 +729,11 @@ fixbutton.MouseButton1Down:Connect(function()
 	playing = false
 	TextLabel_9.Text = "Play"
 end)
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_5.Rotation = 80
+UIGradient_5.Parent = fixbutton
 
+UICorner_14.Parent = fixbutton
 UITextSizeConstraint_17.Parent = fixbutton
 UITextSizeConstraint_17.MaxTextSize = 32
 
@@ -748,11 +754,7 @@ fix.TextWrapped = true
 UITextSizeConstraint_18.Parent = fix
 UITextSizeConstraint_18.MaxTextSize = 32
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_5.Rotation = 80
-UIGradient_5.Parent = fixbutton
 
-UICorner_14.Parent = fixbutton
 
 fix_2.Name = "fix"
 fix_2.Parent = Music
