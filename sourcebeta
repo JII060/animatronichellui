@@ -1,3 +1,6 @@
+-- Animatronic Hell source code
+-- Do not skid for the love of god
+
 -- Gui to Lua
 -- Version: 3.2
 
@@ -176,6 +179,7 @@ function dragify(Frame)
 		end
 	end)
 end
+dragify(Main)
 
 --Properties:
 
@@ -198,6 +202,28 @@ Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Shadow.BorderSizePixel = 0
 Shadow.Position = UDim2.new(0, 0, 0.0199005213, 0)
 Shadow.Size = UDim2.new(0, 1, 0, 1.053)
+Shadow.Name = "Shadow"
+Shadow.Parent = Main
+Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(0, 277, 0, 204)
+
+clo.Name = "close"
+clo.Parent = Shadow
+clo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clo.BackgroundTransparency = 1.000
+clo.Position = UDim2.new(0.902526975, 0, 0.936274409, 0)
+clo.Size = UDim2.new(0, 27, 0, 13)
+clo.Font = Enum.Font.SourceSans
+clo.Text = "🟥"
+clo.TextColor3 = Color3.fromRGB(0, 0, 0)
+clo.TextScaled = true
+clo.TextSize = 14.000
+clo.TextWrapped = true
+clo.MouseButton1Down:Connect(function()
+	Main.Visible = false
+	op.Visible = true
+end)
 
 UICorner.CornerRadius = UDim.new(0.0144388042, 0)
 UICorner.Parent = Shadow
@@ -405,7 +431,7 @@ CreditsButton.LayoutOrder = 3
 CreditsButton.Selectable = false
 CreditsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CreditsButton.ZIndex = 2
-MusicButton.MouseButton1Down:Connect(function()
+CreditsButton.MouseButton1Down:Connect(function()
 	MusicPage.Visible = false
 	CreditsPage.Visible = true
 	CommandsPage.Visible = false
@@ -918,22 +944,8 @@ Title4.TextXAlignment = Enum.TextXAlignment.Left
 UITextSizeConstraint_23.Parent = Title4
 UITextSizeConstraint_23.MaxTextSize = 45
 
-clo.Name = "close"
-clo.Parent = Main
-clo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-clo.BackgroundTransparency = 1.000
-clo.Position = UDim2.new(0, 0.918, 0, 0.998)
-clo.Size = UDim2.new(0, 31, 0, 14)
-clo.Font = Enum.Font.SourceSans
-clo.Text = "🟥"
-clo.TextColor3 = Color3.fromRGB(0, 0, 0)
-clo.TextScaled = true
-clo.TextSize = 14.000
-clo.TextWrapped = true
-clo.MouseButton1Down:Connect(function()
-	Main.Visible = false
-	op.Visible = true
-end)
+
+
 
 op.Name = "open"
 op.Parent = Ascension1512197256136715140
@@ -958,7 +970,7 @@ UICorner_19.Parent = op
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
 UIGradient_7.Rotation = 70
 UIGradient_7.Parent = op
-dragify(Main)
+
 
 -- Scripts:
 
