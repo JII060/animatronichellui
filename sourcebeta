@@ -7,6 +7,7 @@ local Ascension1512197256136715140 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Shadow = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Top = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local Title1 = Instance.new("TextLabel")
@@ -97,15 +98,13 @@ local UIGradient_6 = Instance.new("UIGradient")
 local UICorner_17 = Instance.new("UICorner")
 local Line3 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
-local Title1_2 = Instance.new("TextLabel")
+local Title4 = Instance.new("TextLabel")
 local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-reznov = true
+local close = Instance.new("TextButton")
+local open = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
 playing = false
-
-
-
-
 
 --Properties:
 
@@ -125,11 +124,14 @@ Shadow.Name = "Shadow"
 Shadow.Parent = Main
 Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Shadow.BorderSizePixel = 0
-Shadow.Position = UDim2.new(0, 0, 0.019900497, 0)
-Shadow.Size = UDim2.new(1, 0, 0.980099499, 0)
+Shadow.Position = UDim2.new(0, 0, 0.0199005213, 0)
+Shadow.Size = UDim2.new(1, 0, 1.13169479, 0)
 
 UICorner.CornerRadius = UDim.new(0.0144388042, 0)
 UICorner.Parent = Shadow
+
+UIAspectRatioConstraint.Parent = Main
+UIAspectRatioConstraint.AspectRatio = 1.449
 
 Top.Name = "Top"
 Top.Parent = Main
@@ -149,7 +151,6 @@ Title1.BorderSizePixel = 0
 Title1.Position = UDim2.new(0.0215413272, 0, 0.0202122889, 0)
 Title1.Size = UDim2.new(0.351998091, 0, 0.0819982663, 0)
 Title1.ZIndex = 2
-Title1.Font = Enum.Font.Unknown
 Title1.Text = "ANIMATRONIC"
 Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title1.TextScaled = true
@@ -168,7 +169,6 @@ Title2.BorderSizePixel = 0
 Title2.Position = UDim2.new(0.382685691, 0, 0.0202122889, 0)
 Title2.Size = UDim2.new(0.168270648, 0, 0.0819982663, 0)
 Title2.ZIndex = 2
-Title2.Font = Enum.Font.Unknown
 Title2.Text = "HELL"
 Title2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title2.TextScaled = true
@@ -191,7 +191,6 @@ Title3.BorderSizePixel = 0
 Title3.Position = UDim2.new(0.812405884, 0, 0.0202122889, 0)
 Title3.Size = UDim2.new(0.168270648, 0, 0.0819982663, 0)
 Title3.ZIndex = 2
-Title3.Font = Enum.Font.Unknown
 Title3.Text = "V5"
 Title3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title3.TextScaled = true
@@ -244,6 +243,11 @@ CommandsButton.LayoutOrder = 1
 CommandsButton.Selectable = false
 CommandsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CommandsButton.ZIndex = 2
+CommandsButton.MouseButton1Down:Connect(function()
+	MusicPage.Visible = false
+	CreditsPage.Visible = false
+	CommandsPage.Visible = true
+end)
 
 UICorner_4.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_4.Parent = CommandsButton
@@ -265,7 +269,6 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.287358105, 0, 0.161649391, 0)
 TextLabel.Size = UDim2.new(0.678240657, 0, 0.63652426, 0)
 TextLabel.ZIndex = 2
-TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "Commands"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
@@ -285,6 +288,11 @@ MusicButton.LayoutOrder = 2
 MusicButton.Selectable = false
 MusicButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 MusicButton.ZIndex = 2
+MusicButton.MouseButton1Down:Connect(function()
+	MusicPage.Visible = true
+	CreditsPage.Visible = false
+	CommandsPage.Visible = false
+end)
 
 UICorner_5.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_5.Parent = MusicButton
@@ -306,7 +314,6 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.287358105, 0, 0.161649391, 0)
 TextLabel_2.Size = UDim2.new(0.678240657, 0, 0.63652426, 0)
 TextLabel_2.ZIndex = 2
-TextLabel_2.Font = Enum.Font.Unknown
 TextLabel_2.Text = "FE Music"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
@@ -326,6 +333,11 @@ CreditsButton.LayoutOrder = 3
 CreditsButton.Selectable = false
 CreditsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CreditsButton.ZIndex = 2
+MusicButton.MouseButton1Down:Connect(function()
+	MusicPage.Visible = false
+	CreditsPage.Visible = true
+	CommandsPage.Visible = false
+end)
 
 UICorner_6.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_6.Parent = CreditsButton
@@ -347,7 +359,6 @@ TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.287358105, 0, 0.161649391, 0)
 TextLabel_3.Size = UDim2.new(0.678240657, 0, 0.63652426, 0)
 TextLabel_3.ZIndex = 2
-TextLabel_3.Font = Enum.Font.Unknown
 TextLabel_3.Text = "Credits"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
@@ -376,6 +387,7 @@ CommandsPage.Size = UDim2.new(1, 0, 1, 0)
 CommandsPage.Visible = false
 CommandsPage.ZIndex = 2
 
+
 UIListLayout_2.Parent = CommandsPage
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
@@ -391,7 +403,6 @@ UnlockAll.Position = UDim2.new(0.407489836, 0, 0, 0)
 UnlockAll.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
 UnlockAll.ZIndex = 2
 
-
 UICorner_7.CornerRadius = UDim.new(0.183901846, 0)
 UICorner_7.Parent = UnlockAll
 
@@ -402,7 +413,6 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.0192722511, 0, 0.137926385, 0)
 TextLabel_4.Size = UDim2.new(0.67021215, 0, 0.712619662, 0)
 TextLabel_4.ZIndex = 2
-TextLabel_4.Font = Enum.Font.Unknown
 TextLabel_4.Text = "Unlock All Characters"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
@@ -420,7 +430,6 @@ TextButton.Position = UDim2.new(0.71679157, 0, 0.1379264, 0)
 TextButton.Selectable = false
 TextButton.Size = UDim2.new(0.266099155, 0, 0.712619662, 0)
 TextButton.ZIndex = 2
-TextButton.Font = Enum.Font.Unknown
 TextButton.Text = ""
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
@@ -460,8 +469,6 @@ TextButton.MouseButton1Down:Connect(function()
 		task.wait(1)
 	end)
 end)
-	
-
 
 UITextSizeConstraint_8.Parent = TextButton
 UITextSizeConstraint_8.MaxTextSize = 32
@@ -473,7 +480,6 @@ TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.0224438906, 0, 0.0645161271, 0)
 TextLabel_5.Size = UDim2.new(0.952226341, 0, 0.935483873, 0)
 TextLabel_5.ZIndex = 2
-TextLabel_5.Font = Enum.Font.Unknown
 TextLabel_5.Text = "Activate"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
@@ -500,7 +506,6 @@ ToggleDay.Position = UDim2.new(0.407489836, 0, 0, 0)
 ToggleDay.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
 ToggleDay.ZIndex = 2
 
-
 UICorner_9.CornerRadius = UDim.new(0.183901846, 0)
 UICorner_9.Parent = ToggleDay
 
@@ -511,14 +516,12 @@ TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.0192722511, 0, 0.137926385, 0)
 TextLabel_6.Size = UDim2.new(0.67021215, 0, 0.712619662, 0)
 TextLabel_6.ZIndex = 2
-TextLabel_6.Font = Enum.Font.Unknown
 TextLabel_6.Text = "Toggle Day Animations"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
 TextLabel_6.TextWrapped = true
 TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
-
 
 UITextSizeConstraint_10.Parent = TextLabel_6
 UITextSizeConstraint_10.MaxTextSize = 32
@@ -530,7 +533,6 @@ TextButton_2.Position = UDim2.new(0.71679157, 0, 0.1379264, 0)
 TextButton_2.Selectable = false
 TextButton_2.Size = UDim2.new(0.266099155, 0, 0.712619662, 0)
 TextButton_2.ZIndex = 2
-TextButton_2.Font = Enum.Font.Unknown
 TextButton_2.Text = ""
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
@@ -538,7 +540,7 @@ TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
 TextButton_2.MouseButton1Down:Connect(function()
-	if reznov == false then
+	if workspace.IsDay.Value == false then
 		workspace.IsDay.Value = true
 	else
 		workspace.IsDay.Value = false
@@ -555,7 +557,6 @@ TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.0224438906, 0, 0.0645161271, 0)
 TextLabel_7.Size = UDim2.new(0.952226341, 0, 0.935483873, 0)
 TextLabel_7.ZIndex = 2
-TextLabel_7.Font = Enum.Font.Unknown
 TextLabel_7.Text = "Toggle"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextScaled = true
@@ -580,6 +581,7 @@ MusicPage.BorderSizePixel = 0
 MusicPage.Size = UDim2.new(1, 0, 1, 0)
 MusicPage.ZIndex = 2
 
+
 Music.Name = "Music"
 Music.Parent = MusicPage
 Music.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -599,7 +601,6 @@ TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.163815022, 0, 0.137926385, 0)
 TextLabel_8.Size = UDim2.new(0.67021215, 0, 0.712619662, 0)
 TextLabel_8.ZIndex = 2
-TextLabel_8.Font = Enum.Font.Unknown
 TextLabel_8.Text = "FE Music Player"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextScaled = true
@@ -616,7 +617,6 @@ TextButton_3.Position = UDim2.new(0.302435517, 0, 3.3562088, 0)
 TextButton_3.Selectable = false
 TextButton_3.Size = UDim2.new(0.390221059, 0, 1.0425576, 0)
 TextButton_3.ZIndex = 2
-TextButton_3.Font = Enum.Font.Unknown
 TextButton_3.Text = ""
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextScaled = true
@@ -642,7 +642,7 @@ TextButton_3.MouseButton1Down:Connect(function()
 		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
 		TextLabel_9.Text = "Play"
 		playing = false
-		end
+	end
 end)
 
 UITextSizeConstraint_14.Parent = TextButton_3
@@ -655,7 +655,6 @@ TextLabel_9.BorderSizePixel = 0
 TextLabel_9.Position = UDim2.new(0.0990609303, 0, 0.130663738, 0)
 TextLabel_9.Size = UDim2.new(0.796587944, 0, 0.706375897, 0)
 TextLabel_9.ZIndex = 2
-TextLabel_9.Font = Enum.Font.Unknown
 TextLabel_9.Text = "Play"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextScaled = true
@@ -680,7 +679,6 @@ TextButton_4.Position = UDim2.new(0.240763932, 0, 1.44822705, 0)
 TextButton_4.Selectable = false
 TextButton_4.Size = UDim2.new(0.518295228, 0, 1.37946594, 0)
 TextButton_4.ZIndex = 2
-TextButton_4.Font = Enum.Font.Unknown
 TextButton_4.PlaceholderText = "Audio ID"
 TextButton_4.Text = "6828176320 "
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -721,7 +719,6 @@ TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.0285769571, 0, 0.137926385, 0)
 TextLabel_10.Size = UDim2.new(0.674398124, 0, 0.712619662, 0)
 TextLabel_10.ZIndex = 2
-TextLabel_10.Font = Enum.Font.Unknown
 TextLabel_10.Text = "MechanicManAaron"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextScaled = true
@@ -741,7 +738,6 @@ TextButton_5.Selectable = false
 TextButton_5.Size = UDim2.new(0.296112269, 0, 0.767816067, 0)
 TextButton_5.ZIndex = 2
 TextButton_5.AutoButtonColor = false
-TextButton_5.Font = Enum.Font.Unknown
 TextButton_5.Text = ""
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextScaled = true
@@ -759,7 +755,6 @@ TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.0795356631, 0, 0.130663842, 0)
 TextLabel_11.Size = UDim2.new(0.837725878, 0, 0.797448635, 0)
 TextLabel_11.ZIndex = 2
-TextLabel_11.Font = Enum.Font.Unknown
 TextLabel_11.Text = "UI/UAV2"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextScaled = true
@@ -799,7 +794,6 @@ TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(0.0285769571, 0, 0.137926385, 0)
 TextLabel_12.Size = UDim2.new(0.674398124, 0, 0.712619662, 0)
 TextLabel_12.ZIndex = 2
-TextLabel_12.Font = Enum.Font.Unknown
 TextLabel_12.Text = "Metaspam#2351"
 TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.TextScaled = true
@@ -819,7 +813,6 @@ TextButton_6.Selectable = false
 TextButton_6.Size = UDim2.new(0.296112269, 0, 0.767816067, 0)
 TextButton_6.ZIndex = 2
 TextButton_6.AutoButtonColor = false
-TextButton_6.Font = Enum.Font.Unknown
 TextButton_6.Text = ""
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextScaled = true
@@ -837,7 +830,6 @@ TextLabel_13.BorderSizePixel = 0
 TextLabel_13.Position = UDim2.new(0.0795356631, 0, 0.130663842, 0)
 TextLabel_13.Size = UDim2.new(0.837725878, 0, 0.797448635, 0)
 TextLabel_13.ZIndex = 2
-TextLabel_13.Font = Enum.Font.Unknown
 TextLabel_13.Text = "Coding"
 TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.TextScaled = true
@@ -864,25 +856,164 @@ Line3.ZIndex = 2
 UICorner_18.CornerRadius = UDim.new(1, 0)
 UICorner_18.Parent = Line3
 
-Title1_2.Name = "Title1"
-Title1_2.Parent = Top
-Title1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title1_2.BackgroundTransparency = 1.000
-Title1_2.BorderSizePixel = 0
-Title1_2.Position = UDim2.new(0.544644594, 0, 0.00428401306, 0)
-Title1_2.Size = UDim2.new(0.373643756, 0, 0.108544961, 0)
-Title1_2.ZIndex = 2
-Title1_2.Font = Enum.Font.Unknown
-Title1_2.Text = "Report any bugs to the discord server or the showcase video."
-Title1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title1_2.TextScaled = true
-Title1_2.TextSize = 14.000
-Title1_2.TextWrapped = true
-Title1_2.TextXAlignment = Enum.TextXAlignment.Left
+Title4.Name = "Title4"
+Title4.Parent = Top
+Title4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title4.BackgroundTransparency = 1.000
+Title4.BorderSizePixel = 0
+Title4.Position = UDim2.new(0.544644594, 0, 0.00428401306, 0)
+Title4.Size = UDim2.new(0.373643756, 0, 0.108544961, 0)
+Title4.ZIndex = 2
+Title4.Text = "Report any bugs to the discord server or the showcase video."
+Title4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title4.TextScaled = true
+Title4.TextSize = 14.000
+Title4.TextWrapped = true
+Title4.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_23.Parent = Title1_2
+UITextSizeConstraint_23.Parent = Title4
 UITextSizeConstraint_23.MaxTextSize = 45
 
-UIAspectRatioConstraint.Parent = Main
-UIAspectRatioConstraint.AspectRatio = 1.449
+close.Name = "close"
+close.Parent = Main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.885391593, 0, 0.998436391, 0)
+close.Size = UDim2.new(0, 31, 0, 29)
+close.Font = Enum.Font.SourceSans
+close.Text = "🟥"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+close.MouseButton1Down:Connect(function()
+	Main.Visible = false
+	open.Visible = true
+end)
 
+open.Name = "open"
+open.Parent = Ascension1512197256136715140
+open.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+open.Position = UDim2.new(-0.000586822629, 0, 0.85367018, 0)
+open.Size = UDim2.new(0, 66, 0, 65)
+open.Font = Enum.Font.Unknown
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+open.Visible = false
+open.MouseButton1Down:Connect(function()
+	Main.Visible = true
+	open.Visible = false
+end)
+
+UICorner_19.CornerRadius = UDim.new(0, 30)
+UICorner_19.Parent = open
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
+UIGradient_7.Rotation = 70
+UIGradient_7.Parent = open
+
+-- Scripts:
+
+local function BHZVYO_fake_script() -- Main.drag 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	local leadFrame = Instance.new('Frame') do
+		leadFrame.AnchorPoint = frame.AnchorPoint
+		leadFrame.Position = frame.Position
+		leadFrame.Size = frame.Size
+		leadFrame.Name = `Lead {frame.Name}`
+		leadFrame.Visible = false
+		leadFrame.Parent = frame.Parent
+	end
+	
+	local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
+	
+	local inputChanged = nil
+	local inputEnded = nil
+	
+	local function getBoundsRelations(guiObject : GuiObject)
+		local bounds = screenGui.AbsoluteSize
+		local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
+		local bottomRight = topLeft + guiObject.AbsoluteSize
+	
+		local boundRelations = {
+			Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
+			Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
+			Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
+			Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
+		}
+	
+		return (not boundRelations.Top
+			and not boundRelations.Bottom
+			and not boundRelations.Left
+			and not boundRelations.Right), boundRelations
+	end
+	
+	frame.InputBegan:Connect(function(inputObject : InputObject)
+		if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
+	
+			local lastMousePosition = UserInputService:GetMouseLocation()
+			local goalPosition = frame.Position
+	
+			inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
+				if input.UserInputType == Enum.UserInputType.MouseMovement then
+					local currentMousePosition = UserInputService:GetMouseLocation()
+					local mouseDelta = currentMousePosition - lastMousePosition
+	
+					goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
+	
+					leadFrame.Position = goalPosition
+	
+					local isInBounds, relations = getBoundsRelations(leadFrame)
+	
+					if not isInBounds then
+						local x = (relations.Left or 0) - (relations.Right or 0)
+						local y = (relations.Top or 0) - (relations.Bottom or 0)
+	
+						goalPosition += UDim2.fromOffset(x, y)
+					end
+	
+					frame.Position = goalPosition
+					lastMousePosition = currentMousePosition
+				end
+			end)
+	
+			inputEnded = frame.InputEnded:Connect(function(input : InputObject)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					inputChanged:Disconnect()
+					inputChanged = nil
+	
+					inputEnded:Disconnect()
+					inputEnded = nil
+				end
+			end)
+		end
+	end)
+	
+	frame.Destroying:Once(function()
+	
+		leadFrame = leadFrame:Destroy()
+	
+		if inputChanged  then
+			inputChanged:Disconnect()
+			inputChanged = nil
+		end
+	
+		if inputEnded then
+			inputEnded:Disconnect()
+			inputEnded = nil
+		end
+	end)
+end
+coroutine.wrap(BHZVYO_fake_script)()
+
+if game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 then
+	playing = false
+end
