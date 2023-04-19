@@ -105,6 +105,7 @@ local open = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
 playing = false
+print("Created Instances, moving onto properties.")
 
 --Properties:
 
@@ -248,9 +249,11 @@ CommandsButton.MouseButton1Down:Connect(function()
 	CreditsPage.Visible = false
 	CommandsPage.Visible = true
 end)
+print("Loaded cmds")
 
 UICorner_4.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_4.Parent = CommandsButton
+print("Loaded cmds corner")
 
 ImageLabel.Parent = CommandsButton
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -293,6 +296,7 @@ MusicButton.MouseButton1Down:Connect(function()
 	CreditsPage.Visible = false
 	CommandsPage.Visible = false
 end)
+print("Loaded musbutton")
 
 UICorner_5.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_5.Parent = MusicButton
@@ -333,7 +337,7 @@ CreditsButton.LayoutOrder = 3
 CreditsButton.Selectable = false
 CreditsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CreditsButton.ZIndex = 2
-MusicButton.MouseButton1Down:Connect(function()
+CreditsButton.MouseButton1Down:Connect(function()
 	MusicPage.Visible = false
 	CreditsPage.Visible = true
 	CommandsPage.Visible = false
@@ -469,6 +473,7 @@ TextButton.MouseButton1Down:Connect(function()
 		task.wait(1)
 	end)
 end)
+print("Loaded UAV2")
 
 UITextSizeConstraint_8.Parent = TextButton
 UITextSizeConstraint_8.MaxTextSize = 32
@@ -546,6 +551,7 @@ TextButton_2.MouseButton1Down:Connect(function()
 		workspace.IsDay.Value = false
 	end
 end)
+print("Loaded toggleday")
 
 UITextSizeConstraint_11.Parent = TextButton_2
 UITextSizeConstraint_11.MaxTextSize = 32
@@ -644,6 +650,7 @@ TextButton_3.MouseButton1Down:Connect(function()
 		playing = false
 	end
 end)
+print("Loaded music")
 
 UITextSizeConstraint_14.Parent = TextButton_3
 UITextSizeConstraint_14.MaxTextSize = 32
@@ -890,6 +897,7 @@ close.MouseButton1Down:Connect(function()
 	Main.Visible = false
 	open.Visible = true
 end)
+print("Loaded Close Button")
 
 open.Name = "open"
 open.Parent = Ascension1512197256136715140
@@ -907,6 +915,7 @@ open.MouseButton1Down:Connect(function()
 	Main.Visible = true
 	open.Visible = false
 end)
+print("Loaded open button")
 
 UICorner_19.CornerRadius = UDim.new(0, 30)
 UICorner_19.Parent = open
@@ -914,7 +923,7 @@ UICorner_19.Parent = open
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
 UIGradient_7.Rotation = 70
 UIGradient_7.Parent = open
-
+print("Properties finished loading, moving onto extra scripts.")
 -- Scripts:
 
 local function BHZVYO_fake_script() -- Main.drag 
@@ -1017,3 +1026,4 @@ coroutine.wrap(BHZVYO_fake_script)()
 if game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 then
 	playing = false
 end
+print("scripts successfuly loaded.")
