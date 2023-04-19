@@ -100,18 +100,89 @@ local Line3 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
 local Title4 = Instance.new("TextLabel")
 local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
-local close = Instance.new("TextButton")
-local open = Instance.new("TextButton")
+local clo = Instance.new("TextButton")
+local op = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
 local playing = false
-print("Created Instances, moving onto properties.")
+--Functions:
+local function UnlockAllV2()
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+	local function UnlockDevCharacters()
+		local function Unlock()
+			local UIArea = Player.PlayerGui.MainMenu["CharFrames"].Classic.Classic3
+			UIArea.Visible = true
+			for _, v in pairs(UIArea:GetChildren()) do
+				if v:IsA("ImageButton") then
+					v.Visible = true
+				end
+			end
+		end
+		Unlock()
+	end
+
+	local function UnlockOtherCharacters()
+		for _,v in pairs(Player.PlayerGui.MainMenu:GetDescendants()) do
+			if v:IsA("ImageButton") then
+				if v:FindFirstChild("Viewport")then
+					v.Image = ""
+					v.Viewport.Visible = true
+				end
+			end
+		end
+	end
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		UnlockOtherCharacters()
+		UnlockDevCharacters()
+		task.wait(1)
+	end)
+end
+
+
+
+function dragify(Frame)
+	dragToggle = nil
+	dragSpeed = 0.15
+	dragInput = nil
+	dragStart = nil
+	dragPos = nil
+	function updateInput(input)
+		Delta = input.Position - dragStart
+		Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+	end
+	Frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	Frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateInput(input)
+		end
+	end)
+end
 
 --Properties:
 
 Ascension1512197256136715140.Name = "Ascension1512197256136715140"
-Ascension1512197256136715140.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ascension1512197256136715140.Parent = game:GetService("CoreGui")
 Ascension1512197256136715140.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Ascension1512197256136715140.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = Ascension1512197256136715140
@@ -126,7 +197,7 @@ Shadow.Parent = Main
 Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Shadow.BorderSizePixel = 0
 Shadow.Position = UDim2.new(0, 0, 0.0199005213, 0)
-Shadow.Size = UDim2.new(1, 0, 1.13169479, 0)
+Shadow.Size = UDim2.new(0, 1, 0, 1.053)
 
 UICorner.CornerRadius = UDim.new(0.0144388042, 0)
 UICorner.Parent = Shadow
@@ -249,11 +320,9 @@ CommandsButton.MouseButton1Down:Connect(function()
 	CreditsPage.Visible = false
 	CommandsPage.Visible = true
 end)
-print("Loaded cmds")
 
 UICorner_4.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_4.Parent = CommandsButton
-print("Loaded cmds corner")
 
 ImageLabel.Parent = CommandsButton
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -296,7 +365,6 @@ MusicButton.MouseButton1Down:Connect(function()
 	CreditsPage.Visible = false
 	CommandsPage.Visible = false
 end)
-print("Loaded musbutton")
 
 UICorner_5.CornerRadius = UDim.new(0.161649421, 0)
 UICorner_5.Parent = MusicButton
@@ -337,7 +405,7 @@ CreditsButton.LayoutOrder = 3
 CreditsButton.Selectable = false
 CreditsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CreditsButton.ZIndex = 2
-CreditsButton.MouseButton1Down:Connect(function()
+MusicButton.MouseButton1Down:Connect(function()
 	MusicPage.Visible = false
 	CreditsPage.Visible = true
 	CommandsPage.Visible = false
@@ -441,39 +509,10 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.TextXAlignment = Enum.TextXAlignment.Left
 TextButton.MouseButton1Down:Connect(function()
-	local Player = game.Players.LocalPlayer
-	local Character = Player.Character
-	local function UnlockDevCharacters()
-		local function Unlock()
-			local UIArea = Player.PlayerGui.MainMenu["CharFrames"].Classic.Classic3
-			UIArea.Visible = true
-			for _, v in pairs(UIArea:GetChildren()) do
-				if v:IsA("ImageButton") then
-					v.Visible = true
-				end
-			end
-		end
-		Unlock()
-	end
-
-	local function UnlockOtherCharacters()
-		for _,v in pairs(Player.PlayerGui.MainMenu:GetDescendants()) do
-			if v:IsA("ImageButton") then
-				if v:FindFirstChild("Viewport")then
-					v.Image = ""
-					v.Viewport.Visible = true
-				end
-			end
-		end
-	end
-
-	game:GetService("RunService").RenderStepped:Connect(function()
-		UnlockOtherCharacters()
-		UnlockDevCharacters()
-		task.wait(1)
-	end)
+	UnlockAllV2()
 end)
-print("Loaded UAV2")
+	
+
 
 UITextSizeConstraint_8.Parent = TextButton
 UITextSizeConstraint_8.MaxTextSize = 32
@@ -551,7 +590,6 @@ TextButton_2.MouseButton1Down:Connect(function()
 		workspace.IsDay.Value = false
 	end
 end)
-print("Loaded toggleday")
 
 UITextSizeConstraint_11.Parent = TextButton_2
 UITextSizeConstraint_11.MaxTextSize = 32
@@ -650,7 +688,6 @@ TextButton_3.MouseButton1Down:Connect(function()
 		playing = false
 	end
 end)
-print("Loaded music")
 
 UITextSizeConstraint_14.Parent = TextButton_3
 UITextSizeConstraint_14.MaxTextSize = 32
@@ -881,149 +918,53 @@ Title4.TextXAlignment = Enum.TextXAlignment.Left
 UITextSizeConstraint_23.Parent = Title4
 UITextSizeConstraint_23.MaxTextSize = 45
 
-close.Name = "close"
-close.Parent = Main
-close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-close.BackgroundTransparency = 1.000
-close.Position = UDim2.new(0.885391593, 0, 0.998436391, 0)
-close.Size = UDim2.new(0, 31, 0, 29)
-close.Font = Enum.Font.SourceSans
-close.Text = "🟥"
-close.TextColor3 = Color3.fromRGB(0, 0, 0)
-close.TextScaled = true
-close.TextSize = 14.000
-close.TextWrapped = true
-close.MouseButton1Down:Connect(function()
+clo.Name = "close"
+clo.Parent = Main
+clo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clo.BackgroundTransparency = 1.000
+clo.Position = UDim2.new(0, 0.918, 0, 0.998)
+clo.Size = UDim2.new(0, 31, 0, 14)
+clo.Font = Enum.Font.SourceSans
+clo.Text = "🟥"
+clo.TextColor3 = Color3.fromRGB(0, 0, 0)
+clo.TextScaled = true
+clo.TextSize = 14.000
+clo.TextWrapped = true
+clo.MouseButton1Down:Connect(function()
 	Main.Visible = false
-	open.Visible = true
+	op.Visible = true
 end)
-print("Loaded Close Button")
 
-open.Name = "open"
-open.Parent = Ascension1512197256136715140
-open.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
-open.Position = UDim2.new(-0.000586822629, 0, 0.85367018, 0)
-open.Size = UDim2.new(0, 66, 0, 65)
-open.Font = Enum.Font.Unknown
-open.Text = "OPEN"
-open.TextColor3 = Color3.fromRGB(0, 0, 0)
-open.TextScaled = true
-open.TextSize = 14.000
-open.TextWrapped = true
-open.Visible = false
-open.MouseButton1Down:Connect(function()
+op.Name = "open"
+op.Parent = Ascension1512197256136715140
+op.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+op.Position = UDim2.new(-0.000586822629, 0, 0.85367018, 0)
+op.Size = UDim2.new(0, 66, 0, 65)
+op.Font = Enum.Font.Unknown
+op.Text = "OPEN"
+op.TextColor3 = Color3.fromRGB(0, 0, 0)
+op.TextScaled = true
+op.TextSize = 14.000
+op.TextWrapped = true
+op.Visible = false
+op.MouseButton1Down:Connect(function()
 	Main.Visible = true
-	open.Visible = false
+	op.Visible = false
 end)
-print("Loaded open button")
 
 UICorner_19.CornerRadius = UDim.new(0, 30)
-UICorner_19.Parent = open
+UICorner_19.Parent = op
 
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
 UIGradient_7.Rotation = 70
-UIGradient_7.Parent = open
-print("Properties finished loading, moving onto extra scripts.")
+UIGradient_7.Parent = op
+dragify(Main)
+
 -- Scripts:
 
-local function BHZVYO_fake_script() -- Main.drag 
-	local script = Instance.new('LocalScript', Main)
 
-	local UserInputService = game:GetService('UserInputService')
-	
-	local frame = script.Parent
-	
-	local leadFrame = Instance.new('Frame') do
-		leadFrame.AnchorPoint = frame.AnchorPoint
-		leadFrame.Position = frame.Position
-		leadFrame.Size = frame.Size
-		leadFrame.Name = `Lead {frame.Name}`
-		leadFrame.Visible = false
-		leadFrame.Parent = frame.Parent
-	end
-	
-	local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
-	
-	local inputChanged = nil
-	local inputEnded = nil
-	
-	local function getBoundsRelations(guiObject : GuiObject)
-		local bounds = screenGui.AbsoluteSize
-		local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
-		local bottomRight = topLeft + guiObject.AbsoluteSize
-	
-		local boundRelations = {
-			Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
-			Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
-			Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
-			Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
-		}
-	
-		return (not boundRelations.Top
-			and not boundRelations.Bottom
-			and not boundRelations.Left
-			and not boundRelations.Right), boundRelations
-	end
-	
-	frame.InputBegan:Connect(function(inputObject : InputObject)
-		if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
-	
-			local lastMousePosition = UserInputService:GetMouseLocation()
-			local goalPosition = frame.Position
-	
-			inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
-				if input.UserInputType == Enum.UserInputType.MouseMovement then
-					local currentMousePosition = UserInputService:GetMouseLocation()
-					local mouseDelta = currentMousePosition - lastMousePosition
-	
-					goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
-	
-					leadFrame.Position = goalPosition
-	
-					local isInBounds, relations = getBoundsRelations(leadFrame)
-	
-					if not isInBounds then
-						local x = (relations.Left or 0) - (relations.Right or 0)
-						local y = (relations.Top or 0) - (relations.Bottom or 0)
-	
-						goalPosition += UDim2.fromOffset(x, y)
-					end
-	
-					frame.Position = goalPosition
-					lastMousePosition = currentMousePosition
-				end
-			end)
-	
-			inputEnded = frame.InputEnded:Connect(function(input : InputObject)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					inputChanged:Disconnect()
-					inputChanged = nil
-	
-					inputEnded:Disconnect()
-					inputEnded = nil
-				end
-			end)
-		end
-	end)
-	
-	frame.Destroying:Once(function()
-	
-		leadFrame = leadFrame:Destroy()
-	
-		if inputChanged  then
-			inputChanged:Disconnect()
-			inputChanged = nil
-		end
-	
-		if inputEnded then
-			inputEnded:Disconnect()
-			inputEnded = nil
-		end
-	end)
-end
-coroutine.wrap(BHZVYO_fake_script)()
+
 
 if game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 then
 	playing = false
 end
-print("scripts successfuly loaded.")
