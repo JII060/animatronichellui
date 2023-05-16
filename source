@@ -954,7 +954,7 @@ Title4.BorderSizePixel = 0
 Title4.Position = UDim2.new(0.544644594, 0, 0.00428401306, 0)
 Title4.Size = UDim2.new(0.373643756, 0, 0.108544961, 0)
 Title4.ZIndex = 2
-Title4.Text = "Press <b>Right Alt</b> to toggle the GUI."
+Title4.Text = "Press <b>X</b> on your keyboard to toggle the GUI."
 Title4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title4.TextScaled = true
 Title4.TextSize = 14.000
@@ -970,7 +970,7 @@ UITextSizeConstraint_23.MaxTextSize = 45
 -- Scripts:
 game:GetService("UserInputService").InputBegan:connect(function(input)
 	
-		if input.KeyCode == Enum.KeyCode.RightAlt then 
+		if input.KeyCode == Enum.KeyCode.X then 
 			OnKeyPressOrClick()
 		end
 	end)
