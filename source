@@ -5,11 +5,9 @@
 
 local Ascension1512197256136715140 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
-local Shadow = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Top = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local Title1 = Instance.new("TextLabel")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local Title2 = Instance.new("TextLabel")
@@ -18,25 +16,22 @@ local UIGradient = Instance.new("UIGradient")
 local Title3 = Instance.new("TextLabel")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local Line1 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local Line2 = Instance.new("Frame")
 local Navigation = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local CommandsButton = Instance.new("ImageButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local MusicButton = Instance.new("ImageButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local fixbutton = Instance.new("TextButton")
-local fix = Instance.new("TextLabel")
-local fix_2 = Instance.new("TextLabel")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local CreditsButton = Instance.new("ImageButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
@@ -44,7 +39,7 @@ local Pages = Instance.new("Frame")
 local CommandsPage = Instance.new("Frame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local UnlockAll = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local TextButton = Instance.new("TextButton")
@@ -52,9 +47,9 @@ local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local TextLabel_5 = Instance.new("TextLabel")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local UIGradient_2 = Instance.new("UIGradient")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local ToggleDay = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local TextButton_2 = Instance.new("TextButton")
@@ -62,10 +57,10 @@ local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 local TextLabel_7 = Instance.new("TextLabel")
 local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
 local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local MusicPage = Instance.new("Frame")
 local Music = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
 local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
 local TextButton_3 = Instance.new("TextButton")
@@ -73,122 +68,55 @@ local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
 local TextLabel_9 = Instance.new("TextLabel")
 local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
 local UIGradient_4 = Instance.new("UIGradient")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local TextButton_4 = Instance.new("TextBox")
 local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local UICorner_12 = Instance.new("UICorner")
+local fixbutton = Instance.new("TextButton")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local fix = Instance.new("TextLabel")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local UIGradient_5 = Instance.new("UIGradient")
 local UICorner_13 = Instance.new("UICorner")
+local fix_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
 local CreditsPage = Instance.new("Frame")
 local Credit = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
-local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
 local TextButton_5 = Instance.new("TextButton")
-local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
 local TextLabel_11 = Instance.new("TextLabel")
-local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
-local UIGradient_5 = Instance.new("UIGradient")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local UIGradient_6 = Instance.new("UIGradient")
 local UICorner_15 = Instance.new("UICorner")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local Credit_2 = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
 local TextLabel_12 = Instance.new("TextLabel")
-local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
 local TextButton_6 = Instance.new("TextButton")
-local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
 local TextLabel_13 = Instance.new("TextLabel")
-local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
-local UIGradient_6 = Instance.new("UIGradient")
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+local UIGradient_7 = Instance.new("UIGradient")
 local UICorner_17 = Instance.new("UICorner")
 local Line3 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
 local Title4 = Instance.new("TextLabel")
-local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
+local openclose = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local UIGradient_7 = Instance.new("UIGradient")
+local UIGradient_8 = Instance.new("UIGradient")
+local warning = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local alarm = Instance.new("Sound")
+local open = true
 local playing = false
+local anims = false
 local LPlayer = game.Players.LocalPlayer
 local oorc = true
---Functions:
-local function OnKeyPressOrClick()
-	if oorc == true then
-		Main.Visible = false
-		oorc = false
-	else
-		Main.Visible = true
-		oorc = true
-	end
-end
-
-local function UnlockAllV2()
-	local function UnlockDevCharacters()
-		local function Unlock()
-			local UIArea = LPlayer.PlayerGui.MainMenu["Char_Frames"].Classic.Classic3
-			UIArea.Visible = true
-			for _, v in pairs(UIArea:GetChildren()) do
-				if v:IsA("ImageButton") then
-					v.Visible = true
-				end
-			end
-		end
-		Unlock()
-	end
-
-	local function UnlockOtherCharacters()
-		for _,v in pairs(LPlayer.PlayerGui.MainMenu:GetDescendants()) do
-			if v:IsA("ImageButton") then
-				if v:FindFirstChild("Viewport")then
-					v.Image = ""
-					v.Viewport.Visible = true
-				end
-			end
-		end
-	end
-
-	game:GetService("RunService").RenderStepped:Connect(function()
-		UnlockOtherCharacters()
-		UnlockDevCharacters()
-		task.wait(1)
-	end)
-end
-
-
-
-function dragify(Frame)
-	dragToggle = nil
-	dragSpeed = 0.15
-	dragInput = nil
-	dragStart = nil
-	dragPos = nil
-	function updateInput(input)
-		Delta = input.Position - dragStart
-		Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-		game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
-	end
-	Frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-			dragToggle = true
-			dragStart = input.Position
-			startPos = Frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	Frame.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	game:GetService("UserInputService").InputChanged:Connect(function(input)
-		if input == dragInput and dragToggle then
-			updateInput(input)
-		end
-	end)
-end
-dragify(Main)
-
 --Properties:
 
 Ascension1512197256136715140.Name = "Ascension1512197256136715140"
@@ -204,23 +132,6 @@ Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0.427106231, 0, 0.5234375, 0)
 
-Shadow.Name = "Shadow"
-Shadow.Parent = Main
-Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Shadow.BorderSizePixel = 0
-Shadow.Position = UDim2.new(0, 0, 0.0199005213, 0)
-Shadow.Size = UDim2.new(0, 1, 0, 1.053)
-Shadow.Name = "Shadow"
-Shadow.Parent = Main
-Shadow.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Shadow.BorderSizePixel = 0
-Shadow.Size = UDim2.new(0, 277, 0, 204)
-
-
-
-UICorner.CornerRadius = UDim.new(0.0144388042, 0)
-UICorner.Parent = Shadow
-
 UIAspectRatioConstraint.Parent = Main
 UIAspectRatioConstraint.AspectRatio = 1.449
 
@@ -231,8 +142,8 @@ Top.BorderSizePixel = 0
 Top.Size = UDim2.new(1, 0, 0.984574199, 0)
 Top.ZIndex = 2
 
-UICorner_2.CornerRadius = UDim.new(0.0143731823, 0)
-UICorner_2.Parent = Top
+UICorner.CornerRadius = UDim.new(0.0143731823, 0)
+UICorner.Parent = Top
 
 Title1.Name = "Title1"
 Title1.Parent = Top
@@ -282,7 +193,7 @@ Title3.BorderSizePixel = 0
 Title3.Position = UDim2.new(0.812405884, 0, 0.0202122889, 0)
 Title3.Size = UDim2.new(0.168270648, 0, 0.0819982663, 0)
 Title3.ZIndex = 2
-Title3.Text = "V5"
+Title3.Text = "V5.5"
 Title3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title3.TextScaled = true
 Title3.TextSize = 14.000
@@ -300,8 +211,8 @@ Line1.Position = UDim2.new(0.531046212, 0, 0.0556960814, 0)
 Line1.Size = UDim2.new(0.363797188, 0, 0.00898323953, 0)
 Line1.ZIndex = 2
 
-UICorner_3.CornerRadius = UDim.new(1, 0)
-UICorner_3.Parent = Line1
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = Line1
 
 Line2.Name = "Line2"
 Line2.Parent = Top
@@ -334,14 +245,9 @@ CommandsButton.LayoutOrder = 1
 CommandsButton.Selectable = false
 CommandsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CommandsButton.ZIndex = 2
-CommandsButton.MouseButton1Down:Connect(function()
-	MusicPage.Visible = false
-	CreditsPage.Visible = false
-	CommandsPage.Visible = true
-end)
 
-UICorner_4.CornerRadius = UDim.new(0.161649421, 0)
-UICorner_4.Parent = CommandsButton
+UICorner_3.CornerRadius = UDim.new(0.161649421, 0)
+UICorner_3.Parent = CommandsButton
 
 ImageLabel.Parent = CommandsButton
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -379,14 +285,9 @@ MusicButton.LayoutOrder = 2
 MusicButton.Selectable = false
 MusicButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 MusicButton.ZIndex = 2
-MusicButton.MouseButton1Down:Connect(function()
-	MusicPage.Visible = true
-	CreditsPage.Visible = false
-	CommandsPage.Visible = false
-end)
 
-UICorner_5.CornerRadius = UDim.new(0.161649421, 0)
-UICorner_5.Parent = MusicButton
+UICorner_4.CornerRadius = UDim.new(0.161649421, 0)
+UICorner_4.Parent = MusicButton
 
 ImageLabel_2.Parent = MusicButton
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -424,14 +325,9 @@ CreditsButton.LayoutOrder = 3
 CreditsButton.Selectable = false
 CreditsButton.Size = UDim2.new(0.885543585, 0, 0.110468328, 0)
 CreditsButton.ZIndex = 2
-CreditsButton.MouseButton1Down:Connect(function()
-	MusicPage.Visible = false
-	CreditsPage.Visible = true
-	CommandsPage.Visible = false
-end)
 
-UICorner_6.CornerRadius = UDim.new(0.161649421, 0)
-UICorner_6.Parent = CreditsButton
+UICorner_5.CornerRadius = UDim.new(0.161649421, 0)
+UICorner_5.Parent = CreditsButton
 
 ImageLabel_3.Parent = CreditsButton
 ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -475,9 +371,7 @@ CommandsPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CommandsPage.BackgroundTransparency = 1.000
 CommandsPage.BorderSizePixel = 0
 CommandsPage.Size = UDim2.new(1, 0, 1, 0)
-CommandsPage.Visible = false
 CommandsPage.ZIndex = 2
-
 
 UIListLayout_2.Parent = CommandsPage
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -494,8 +388,9 @@ UnlockAll.Position = UDim2.new(0.407489836, 0, 0, 0)
 UnlockAll.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
 UnlockAll.ZIndex = 2
 
-UICorner_7.CornerRadius = UDim.new(0.183901846, 0)
-UICorner_7.Parent = UnlockAll
+
+UICorner_6.CornerRadius = UDim.new(0.183901846, 0)
+UICorner_6.Parent = UnlockAll
 
 TextLabel_4.Parent = UnlockAll
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -527,11 +422,6 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.TextXAlignment = Enum.TextXAlignment.Left
-TextButton.MouseButton1Down:Connect(function()
-	UnlockAllV2()
-end)
-	
-
 
 UITextSizeConstraint_8.Parent = TextButton
 UITextSizeConstraint_8.MaxTextSize = 32
@@ -556,10 +446,52 @@ UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_2.Rotation = 80
 UIGradient_2.Parent = TextButton
 
-UICorner_8.CornerRadius = UDim.new(0.258064508, 0)
-UICorner_8.Parent = TextButton
+UICorner_7.CornerRadius = UDim.new(0.258064508, 0)
+UICorner_7.Parent = TextButton
 
+ToggleDay.Name = "ToggleDay"
+ToggleDay.Parent = CommandsPage
+ToggleDay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleDay.BackgroundTransparency = 0.950
+ToggleDay.BorderSizePixel = 0
+ToggleDay.LayoutOrder = 2
+ToggleDay.Position = UDim2.new(0.407489836, 0, 0, 0)
+ToggleDay.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
+ToggleDay.ZIndex = 2
 
+UICorner_8.CornerRadius = UDim.new(0.183901846, 0)
+UICorner_8.Parent = ToggleDay
+
+TextLabel_6.Parent = ToggleDay
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0192722511, 0, 0.137926385, 0)
+TextLabel_6.Size = UDim2.new(0.67021215, 0, 0.712619662, 0)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Text = "Toggle Night/Day Animations"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_10.Parent = TextLabel_6
+UITextSizeConstraint_10.MaxTextSize = 32
+
+TextButton_2.Parent = ToggleDay
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.71679157, 0, 0.1379264, 0)
+TextButton_2.Selectable = false
+TextButton_2.Size = UDim2.new(0.266099155, 0, 0.712619662, 0)
+TextButton_2.ZIndex = 2
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
 
 UITextSizeConstraint_11.Parent = TextButton_2
 UITextSizeConstraint_11.MaxTextSize = 32
@@ -584,8 +516,8 @@ UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_3.Rotation = 80
 UIGradient_3.Parent = TextButton_2
 
-UICorner_10.CornerRadius = UDim.new(0.258064508, 0)
-UICorner_10.Parent = TextButton_2
+UICorner_9.CornerRadius = UDim.new(0.258064508, 0)
+UICorner_9.Parent = TextButton_2
 
 MusicPage.Name = "MusicPage"
 MusicPage.Parent = Pages
@@ -593,8 +525,8 @@ MusicPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MusicPage.BackgroundTransparency = 1.000
 MusicPage.BorderSizePixel = 0
 MusicPage.Size = UDim2.new(1, 0, 1, 0)
+MusicPage.Visible = false
 MusicPage.ZIndex = 2
-
 
 Music.Name = "Music"
 Music.Parent = MusicPage
@@ -606,7 +538,7 @@ Music.Position = UDim2.new(0.0170968883, 0, 0.270089209, 0)
 Music.Size = UDim2.new(0.960029125, 0, 0.0971014574, 0)
 Music.ZIndex = 2
 
-UICorner_11.Parent = Music
+UICorner_10.Parent = Music
 
 TextLabel_8.Parent = Music
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -637,30 +569,52 @@ TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
 TextButton_3.TextWrapped = true
 TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
-TextButton_3.MouseButton1Down:Connect(function()
-	if playing == false then
-		local args = {
-			[1] = TextButton_4.Text
-		}
-
-		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
-		playing = true
-		TextLabel_9.Text = "Stop"
-	else
-		-- Script generated by SimpleSpy - credits to exx#9394
-
-		local args = {
-			[1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.MusicPlayer_Sound
-		}
-
-		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
-		TextLabel_9.Text = "Play"
-		playing = false
-	end
-end)
 
 UITextSizeConstraint_14.Parent = TextButton_3
 UITextSizeConstraint_14.MaxTextSize = 32
+
+TextLabel_9.Parent = TextButton_3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0990609303, 0, 0.130663738, 0)
+TextLabel_9.Size = UDim2.new(0.796587944, 0, 0.706375897, 0)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Text = "Play"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 33.000
+TextLabel_9.TextWrapped = true
+
+UITextSizeConstraint_15.Parent = TextLabel_9
+UITextSizeConstraint_15.MaxTextSize = 32
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_4.Rotation = 80
+UIGradient_4.Parent = TextButton_3
+
+UICorner_11.Parent = TextButton_3
+
+TextButton_4.Name = "TextButton"
+TextButton_4.Parent = Music
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 0.900
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.240763932, 0, 1.44822705, 0)
+TextButton_4.Selectable = false
+TextButton_4.Size = UDim2.new(0.518295228, 0, 1.37946594, 0)
+TextButton_4.ZIndex = 2
+TextButton_4.PlaceholderText = "Audio ID"
+TextButton_4.Text = "6913550990"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UITextSizeConstraint_16.Parent = TextButton_4
+UITextSizeConstraint_16.MaxTextSize = 32
+
+UICorner_12.Parent = TextButton_4
 
 fixbutton.Name = "fixbutton"
 fixbutton.Parent = Music
@@ -701,7 +655,7 @@ UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_5.Rotation = 80
 UIGradient_5.Parent = fixbutton
 
-UICorner_14.Parent = fixbutton
+UICorner_13.Parent = fixbutton
 
 fix_2.Name = "fix"
 fix_2.Parent = Music
@@ -719,67 +673,6 @@ fix_2.TextWrapped = true
 
 UITextSizeConstraint_19.Parent = fix_2
 UITextSizeConstraint_19.MaxTextSize = 32
-
-fixbutton.MouseButton1Down:Connect(function()
-	playing = false
-	TextLabel_9.Text = "Play"
-end)
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_5.Rotation = 80
-UIGradient_5.Parent = fixbutton
-
-UICorner_14.Parent = fixbutton
-UITextSizeConstraint_17.Parent = fixbutton
-UITextSizeConstraint_17.MaxTextSize = 32
-
-
-
-
-
-
-
-TextLabel_9.Parent = TextButton_3
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0.0990609303, 0, 0.130663738, 0)
-TextLabel_9.Size = UDim2.new(0.796587944, 0, 0.706375897, 0)
-TextLabel_9.ZIndex = 2
-TextLabel_9.Text = "Play"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 33.000
-TextLabel_9.TextWrapped = true
-
-UITextSizeConstraint_15.Parent = TextLabel_9
-UITextSizeConstraint_15.MaxTextSize = 32
-
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_4.Rotation = 80
-UIGradient_4.Parent = TextButton_3
-
-UICorner_12.Parent = TextButton_3
-
-TextButton_4.Name = "TextButton"
-TextButton_4.Parent = Music
-TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.BackgroundTransparency = 0.900
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.240763932, 0, 1.44822705, 0)
-TextButton_4.Selectable = false
-TextButton_4.Size = UDim2.new(0.518295228, 0, 1.37946594, 0)
-TextButton_4.ZIndex = 2
-TextButton_4.PlaceholderText = "Audio ID"
-TextButton_4.Text = "6828176320 "
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextScaled = true
-TextButton_4.TextSize = 14.000
-TextButton_4.TextWrapped = true
-
-UITextSizeConstraint_16.Parent = TextButton_4
-UITextSizeConstraint_16.MaxTextSize = 32
-
-UICorner_13.Parent = TextButton_4
 
 CreditsPage.Name = "CreditsPage"
 CreditsPage.Parent = Pages
@@ -816,8 +709,8 @@ TextLabel_10.TextSize = 14.000
 TextLabel_10.TextWrapped = true
 TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_17.Parent = TextLabel_10
-UITextSizeConstraint_17.MaxTextSize = 32
+UITextSizeConstraint_20.Parent = TextLabel_10
+UITextSizeConstraint_20.MaxTextSize = 32
 
 TextButton_5.Parent = Credit
 TextButton_5.Active = false
@@ -835,8 +728,8 @@ TextButton_5.TextSize = 14.000
 TextButton_5.TextWrapped = true
 TextButton_5.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_18.Parent = TextButton_5
-UITextSizeConstraint_18.MaxTextSize = 32
+UITextSizeConstraint_21.Parent = TextButton_5
+UITextSizeConstraint_21.MaxTextSize = 32
 
 TextLabel_11.Parent = TextButton_5
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -851,12 +744,12 @@ TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 14.000
 TextLabel_11.TextWrapped = true
 
-UITextSizeConstraint_19.Parent = TextLabel_11
-UITextSizeConstraint_19.MaxTextSize = 32
+UITextSizeConstraint_22.Parent = TextLabel_11
+UITextSizeConstraint_22.MaxTextSize = 32
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_5.Rotation = 80
-UIGradient_5.Parent = TextButton_5
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_6.Rotation = 80
+UIGradient_6.Parent = TextButton_5
 
 UICorner_15.Parent = TextButton_5
 
@@ -884,15 +777,15 @@ TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(0.0285769571, 0, 0.137926385, 0)
 TextLabel_12.Size = UDim2.new(0.674398124, 0, 0.712619662, 0)
 TextLabel_12.ZIndex = 2
-TextLabel_12.Text = "Metaspam#2351"
+TextLabel_12.Text = "x_or (Discord)"
 TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.TextScaled = true
 TextLabel_12.TextSize = 14.000
 TextLabel_12.TextWrapped = true
 TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_20.Parent = TextLabel_12
-UITextSizeConstraint_20.MaxTextSize = 32
+UITextSizeConstraint_23.Parent = TextLabel_12
+UITextSizeConstraint_23.MaxTextSize = 32
 
 TextButton_6.Parent = Credit_2
 TextButton_6.Active = false
@@ -910,8 +803,8 @@ TextButton_6.TextSize = 14.000
 TextButton_6.TextWrapped = true
 TextButton_6.TextXAlignment = Enum.TextXAlignment.Left
 
-UITextSizeConstraint_21.Parent = TextButton_6
-UITextSizeConstraint_21.MaxTextSize = 32
+UITextSizeConstraint_24.Parent = TextButton_6
+UITextSizeConstraint_24.MaxTextSize = 32
 
 TextLabel_13.Parent = TextButton_6
 TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -926,12 +819,12 @@ TextLabel_13.TextScaled = true
 TextLabel_13.TextSize = 14.000
 TextLabel_13.TextWrapped = true
 
-UITextSizeConstraint_22.Parent = TextLabel_13
-UITextSizeConstraint_22.MaxTextSize = 32
+UITextSizeConstraint_25.Parent = TextLabel_13
+UITextSizeConstraint_25.MaxTextSize = 32
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
-UIGradient_6.Rotation = 80
-UIGradient_6.Parent = TextButton_6
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 193, 31))}
+UIGradient_7.Rotation = 80
+UIGradient_7.Parent = TextButton_6
 
 UICorner_17.Parent = TextButton_6
 
@@ -951,31 +844,202 @@ Title4.Parent = Top
 Title4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title4.BackgroundTransparency = 1.000
 Title4.BorderSizePixel = 0
-Title4.Position = UDim2.new(0.544644594, 0, 0.00428401306, 0)
-Title4.Size = UDim2.new(0.373643756, 0, 0.108544961, 0)
+Title4.Position = UDim2.new(0.0571962334, 0, 0.851309538, 0)
+Title4.Size = UDim2.new(0.197293058, 0, 0.108544961, 0)
 Title4.ZIndex = 2
-Title4.Text = "Press <b>X</b> on your keyboard to toggle the GUI."
+Title4.Text = "Report any bugs to the discord server or the showcase video."
 Title4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title4.TextScaled = true
 Title4.TextSize = 14.000
 Title4.TextWrapped = true
 Title4.TextXAlignment = Enum.TextXAlignment.Left
-Title4.RichText = true
 
-UITextSizeConstraint_23.Parent = Title4
-UITextSizeConstraint_23.MaxTextSize = 45
+UITextSizeConstraint_26.Parent = Title4
+UITextSizeConstraint_26.MaxTextSize = 45
+
+openclose.Name = "open&close"
+openclose.Parent = Ascension1512197256136715140
+openclose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openclose.Position = UDim2.new(-0.000586824084, 0, 0.864806056, 0)
+openclose.Size = UDim2.new(0, 92, 0, 60)
+openclose.Font = Enum.Font.Unknown
+openclose.Text = "CLOSE"
+openclose.TextColor3 = Color3.fromRGB(0, 0, 0)
+openclose.TextScaled = true
+openclose.TextSize = 14.000
+openclose.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0, 30)
+UICorner_19.Parent = openclose
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(243, 60, 4)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(254, 101, 13)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(255, 193, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 93))}
+UIGradient_8.Rotation = 70
+UIGradient_8.Parent = openclose
+
+warning.Name = "warning"
+warning.Parent = Ascension1512197256136715140
+warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+warning.BorderColor3 = Color3.fromRGB(0, 0, 0)
+warning.BorderSizePixel = 0
+warning.Position = UDim2.new(0.226019889, 0, 0.0425170064, 0)
+warning.Size = UDim2.new(0, 496, 0, 81)
+warning.Visible = false
+warning.Font = Enum.Font.Michroma
+warning.Text = "A Developer has been detected in your Server! Do not panic, remove all evidence of you using this GUI to avoid being kicked."
+warning.TextColor3 = Color3.fromRGB(255, 0, 0)
+warning.TextScaled = true
+warning.TextSize = 14.000
+warning.TextWrapped = true
+
+alarm.SoundId = "rbxassetid://6755879028"
+alarm.Looped = true
+alarm.Playing = false
+alarm.Volume = 0.2
+alarm.Parent = warning
 
 
+UICorner_20.CornerRadius = UDim.new(0, 10)
+UICorner_20.Parent = warning
 
--- Scripts:
-game:GetService("UserInputService").InputBegan:connect(function(input)
-	
-		if input.KeyCode == Enum.KeyCode.X then 
-			OnKeyPressOrClick()
+-- Functions
+local GroupService = game:GetService("GroupService")
+local groupID = 3797636
+local function CheckPlayer(UserID)
+	local PlayerGroups = GroupService:GetGroupsAsync(UserID)
+	for _,data in pairs(PlayerGroups) do
+		if data.Id == groupID then
+			if data.Rank >= 200 then
+				warning.Visible = true
+				alarm.Playing = true
+				wait(25)
+				warning.Visible = false
+				alarm.Playing = false
+			end
+			end
+	end
+	end
+			
+			for _,player in game:GetService("Players"):GetPlayers() do
+				CheckPlayer(player.UserId)
+			end
+			game:GetService("Players").PlayerAdded:Connect(function(player)
+				CheckPlayer(player.UserId)
+end)
+
+openclose.MouseButton1Up:Connect(function()
+	if open == true then
+		Main.Visible = false
+		print("closed gui")
+		openclose.BackgroundColor3 = Color3.new(0, 170, 0)
+		openclose.Text = "OPEN"
+		open = false
+		
+	elseif open == false then
+		Main.Visible = true
+		print("opened gui")
+		open = true
+		openclose.BackgroundColor3 = Color3.new(255, 255, 255)
+		
+		openclose.Text = "CLOSE"
+	end
+end)
+
+
+fixbutton.MouseButton1Down:Connect(function()
+	if playing == true then
+		playing = false
+		TextLabel_9.Text = "Play"
+		else
+			warn("ANIMATRONIC HELL: the button isn't frozen")
 		end
+		
+end)
+
+
+
+
+local function UnlockAllV2()
+	local function UnlockDevCharacters()
+		local function Unlock()
+			local UIArea = LPlayer.PlayerGui.MainMenu["Char_Frames"].Classic.Classic3
+			UIArea.Visible = true
+			for _, v in pairs(UIArea:GetChildren()) do
+				if v:IsA("ImageButton") then
+					v.Visible = true
+				end
+			end
+		end
+		Unlock()
+	end
+
+	local function UnlockOtherCharacters()
+		for _,v in pairs(LPlayer.PlayerGui.MainMenu:GetDescendants()) do
+			if v:IsA("ImageButton") then
+				if v:FindFirstChild("Viewport")then
+					v.Image = ""
+					v.Viewport.Visible = true
+				end
+			end
+		end
+	end
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		UnlockOtherCharacters()
+		UnlockDevCharacters()
+		task.wait(1)
 	end)
+end
 
 
+	CreditsButton.MouseButton1Down:Connect(function()
+		MusicPage.Visible = false
+		CreditsPage.Visible = true
+		CommandsPage.Visible = false
+end)
+MusicButton.MouseButton1Down:Connect(function()
+	MusicPage.Visible = true
+	CreditsPage.Visible = false
+	CommandsPage.Visible = false
+end)
+CommandsButton.MouseButton1Down:Connect(function()
+	MusicPage.Visible = false
+	CreditsPage.Visible = false
+	CommandsPage.Visible = true
+end)
 
+TextButton_2.MouseButton1Down:Connect(function()
+	local totoggle = game.Workspace:FindFirstChild("IsDay")
+	
+	if  totoggle:GetAttribute("NightAnims") == false then
+		totoggle:SetAttribute("NightAnims", true)
+	elseif totoggle:GetAttribute("NightAnims") == true then
+		totoggle:SetAttribute("NightAnims", false)
+		
+	end
+	
+end)
 
+TextButton_3.MouseButton1Down:Connect(function()
+	if playing == false then
+		local args = {
+			[1] = TextButton_4.Text
+		}
 
+		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
+		playing = true
+		TextLabel_9.Text = "Stop"
+	else
+		-- Script generated by SimpleSpy - credits to exx#9394
+
+		local args = {
+			[1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.MusicPlayer_Sound
+		}
+
+		game:GetService("ReplicatedStorage").MusicPlayer:InvokeServer(unpack(args))
+		TextLabel_9.Text = "Play"
+		playing = false
+	end
+end)
+TextButton.MouseButton1Down:Connect(function()
+	UnlockAllV2()
+end)
